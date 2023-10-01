@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Use JavaScript to Change Text</title>
+    </head>
+    <body>
+        <h1>The HTML (script) Tag</h1>
+        <p>The HTML <span style="color: red;background-color: aliceblue;">(script) </span>tag is used to define a client-side script (JavaScript).</p>
+        <p>The <span style="color: red;background-color: aliceblue;">(script) </span> element either contains script statements, or it points to an external script file through the <span style="color: red;background-color: aliceblue;">src </span>attribute</p>
+        <p>Common uses for JavaScript are image manipulation, form validation, and dynamic changes of content.</p>
+        <p>To select an HTML element, JavaScript most often uses the <span style="color: red;background-color: aliceblue;">document.getElementById() </span>method.</p>
+        <p>This JavaScript example writes "Hello JavaScript!" into an HTML element with id="demo":</p>
+        
+        <h1>Use JavaScript to Change Text</h1>
+        <p>This uses Script tag </p>
+
+        <button type="button" onclick="display()">
+           DISPLAY!
+        </button>
+        <p id="demo"></p>
+
+        <script>
+            function display(){
+                document.getElementById('demo').innerHTML = "Hello JavaScript"
+            }
+        </script>
+
+
+       <br><br><hr><br><br>
+       
+       <!-- OR -->
+
+       <h1>Use JavaScript to Change Text</h1>
+       <p>This example writes "Hello JavaScript!" into an HTML element with id="demo":</p>
+
+       <p id="demo2"></p>
+             
+       <script>
+            document.getElementById("demo2").innerHTML = "Hello JavaScript"
+       </script>
+    </body>
+</html>
