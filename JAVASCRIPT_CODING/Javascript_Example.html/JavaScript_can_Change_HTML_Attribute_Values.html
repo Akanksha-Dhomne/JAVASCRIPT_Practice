@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JavaScript Can Change HTML Attribute Values</title>
+    </head>
+    <body>
+        <h1>JavaScript Examples</h1>
+        <h1>JavaScript Can Change HTML Attribute Values</h1>
+        <p>In this example JavaScript changes the value of the <span style="color: red;background-color: aliceblue;">src </span> (source) attribute of an <span style="color: red;background-color: aliceblue;">(img)</span> tag:</p>
+
+        <button type="button" 
+        onclick="document.getElementById('myImage').src='bulb_on.jpg'">
+        Turn On the light.
+        </button>
+
+        <img id="myImage"
+        src="bulb_off.jpg" style="width: 200px;">
+
+        <button type="button"
+        onclick="document.getElementById('myImage').src='bulb_off.jpg'">
+        Turn off the light.
+        </button>
+
+    </body>
+</html>
