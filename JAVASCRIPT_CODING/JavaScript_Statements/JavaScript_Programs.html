@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JavaScript Statements</title>
+    </head>
+    <body>
+        <h1>JavaScript programs</h1>
+        <p>A <b>computer program</b> is a list of "instructions" to be "executed" by a computer.</p>
+        <p>In a programming language, these programming instructions are called <b>statements.</b></p>
+        <p>A <b>JavaScript program</b> is a list of programming <b>programming</b></p>
+        <p>In HTML, JavaScript programs are executed by the web browser.</p>
+
+        <h1>JavaScript Statements</h1>
+        <p>JavaScript statements are composed of:</p>
+        <p><span style="color: red;background-color: aliceblue;">Values, Operators, Expressions, Keywords, and Comments.</span></p>
+        <p>This statement tells the browser to write "Hello Dolly." inside an HTML element with id="demo":</p>
+        
+        <p id="demo"></p>
+
+        <script>
+            document.getElementById("demo").innerHTML = "Hello Dolly;";
+        </script>
+
+        <p>Most JavaScript programs contain many JavaScript statements.</p>
+        <p>The statements are executed, one by one, in the same order as they are written.</p>
+        <p>JavaScript programs (and JavaScript statements) are often called JavaScript code.</p>
+
+        <br><hr><br>
+
+        <h1>Semicolons ;</h1>
+        <p>Semicolons separate JavaScript statements.</p>
+        <p>Add a semicolon at the end of each executable statement:</p>
+
+        <p id="demo1">/p>
+        
+        <script>
+            let x, y, z;  
+            x = 8;         
+            y = 6;         
+            z = x + y;
+           document.getElementById("demo1").innerHTML = z;
+        </script>
+
+        <p>When separated by semicolons, multiple statements on one line are allowed:</p>
+
+        <p id="demo2"></p>
+        
+        <script>
+            let a, b, c;  
+            a = 8; b = 6; c = a + b;
+            document.getElementById("demo2").innerHTML = c;
+        </script>
+        
+        <br><hr><br>
+       
+        <h1>JavaScript White Space</h1>
+        <p>JavaScript ignores multiple spaces. You can add white space to your script to make it more readable.</p>
+        <p>The following lines are equivalent:</p>
+        
+        <p>let person = "Hege";</p>
+        <p>let person="Hege";</p>
+
+        <p>A good practice is to put spaces around operators ( = + - * / ):</p>
+
+        <p>let x = y + z;</p>
+
+        <br><hr><br>
+
+        <h1>JavaScript Line Length and Line Breaks</h1>
+        <p>For best readability, programmers often like to avoid code lines longer than 80 characters.</p>
+        <p>If a JavaScript statement does not fit on one line, the best place to break it is after an operator:</p>
+
+        <p id="demo3"></p>
+
+        <script>
+            document.getElementById('demo3').innerHTML =
+            "Hello Dolly!"
+        </script>
+
+        <p id="demo4"></p>
+
+        <script>
+            document.getElementById('demo4').innerHTML =
+            "Hello Javascript"
+        </script>
+
+        <br><hr><br>
+
+        <h1>JavaScript Code Blocks</h1>
+        <p>JavaScript statements can be grouped together in code blocks, inside curly brackets {...}.</p>
+        <p>The purpose of code blocks is to define statements to be executed together.</p>
+        <p>One place you will find statements grouped together in blocks, is in JavaScript functions:</p>
+        <p>JavaScript code blocks are written between { and }</p>
+
+        <button type="button"
+        onclick="myfunction()">
+        Click Me!
+        </button>
+
+        <p id="demo5"></p>
+        <p id="demo6"></p>
+
+        <script>
+            document.getElementById('demo5').innerHTML = "Hello Dolly!";
+            document.getElementById("demo6").innerHTML = "How are you?";
+        </script>
+
+    </body>
+</html>
