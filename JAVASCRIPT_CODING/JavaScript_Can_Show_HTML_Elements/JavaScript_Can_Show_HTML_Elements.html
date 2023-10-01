@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JavaScript Can Show HTML Elements</title>
+    </head>
+    <body>
+        <h1>JavaScript Can Show HTML Elements</h1>
+        <p>Showing hidden HTML elements can also be done by changing the <span style="color: red;background-color: aliceblue;">display </span>style:</p>
+
+        <h2>What Can JavaScript Do?</h2>
+        <p>JavaScript can show hidden HTML elements.</p>
+
+        <p id="demo" style="display: none;">Good Morning!</p>
+
+        <button type="button"
+        onclick="document.getElementById('demo').style.display='block'">
+            Click Me!
+        </button>
+  
+        <br><hr><br>
+
+        <p id="demo2" style="display: none;">Have a nice Day!</p>
+        
+        <button type="button"
+        onclick="document.getElementById('demo2').style.display='block'">
+            Click Me!
+        </button>
+
+        <br><hr><br>
+
+        <button type="button"
+        onclick="document.getElementById('demo3').style.display='block'">
+            Click Me!
+        </button>
+
+        <p id="demo3" style="display: none;">Have to meet you.</p>
+    </body>
+</html>
