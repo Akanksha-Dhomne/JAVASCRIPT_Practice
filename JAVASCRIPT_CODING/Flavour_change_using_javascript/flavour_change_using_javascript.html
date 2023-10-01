@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Change ice-cream flavour using javaScript</title>
+    </head>
+    <body>
+        <h1>My First JavaScript</h1>
+        <p>Here, a JavaScript changes the value of the src (source) attribute of an image.</p>
+    
+        <script>
+            function icecream(sa){
+                var flavour;
+                if(sa == 0){
+                    flavour = "vanilla.jpg"
+                }
+                else if(sa == 1){
+                    flavour = "strawberry.jpg"
+                }
+                else{
+                    flavour = "raspberry.jpg"
+                }
+
+                document.getElementById('myFlavour').src = flavour;
+            }
+        </script>
+
+        <img id="myFlavour" src="vanilla.jpg" width="300" height="290">
+    
+        <p>
+            <button type="button" onclick="icecream(2)">Raspberry flavour</button>
+            <button type="button" onclick="icecream(1)">Strawberry flavour</button>
+            <button type="button" onclick="icecream(0)">Vanilla flavour</button>
+        </p>
+    </body>
+</html>
