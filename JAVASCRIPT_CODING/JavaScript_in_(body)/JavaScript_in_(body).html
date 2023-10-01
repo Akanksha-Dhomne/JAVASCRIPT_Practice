@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h1>JavaScript in (head) or (body)</h1>
+        <p>You can place any number of scripts in an HTML document.</p>
+        <p>Scripts can be placed in the <span style="color: red;background-color: aliceblue;">(body) </span>,or in the <span style="color: red;background-color: aliceblue;">(head) </span> section of an HTML page, or in both.</p>
+
+        <h1 style="background-color: aquamarine;">JavaScript in (body)</h1>
+        <p>In this example, a JavaScript <span style="color: red;background-color: aliceblue;">function </span>is placed in the <span style="color: red;background-color: aliceblue;">(body)</span> section of an HTML page.</p>
+        <p>The function is invoked (called) when a button is clicked:</p>
+        
+        <h3 id="demo">A paragraph</h3>
+
+        <button type="button"
+        onclick="myfunction()">
+            Try it!
+        </button>
+
+        <script>
+            function myfunction(){
+                document.getElementById('demo').innerHTML = "paragraph changed.";
+                document.getElementById('demo').style.color="purple";
+                document.getElementById('demo').style.backgroundColor="pink";
+            }
+        </script>
+
+        <p>Placing scripts at the bottom of the <body> element improves the display speed, because script interpretation slows down the display.</p>
+    </body>
+</html>
