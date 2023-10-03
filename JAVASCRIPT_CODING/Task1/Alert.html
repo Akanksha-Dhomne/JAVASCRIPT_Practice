@@ -4,14 +4,22 @@
         <title>Alert</title>
     </head>
     <body>
-        <p>First number?</p>
+       <p id="demo"></p>
 
         <script>
-            window.alert('First number?');
-            window.alert(1);
+            let num;
+            num = prompt("First number?");
+            document.getElementById("demo").innerHTML = num;
         </script>
-        <form action="action_page.php">
-            <input type="text" id="fname" name="2"></label>
-        </form>
+
+        <p id="demo2"></p>
+
+        <script>
+            let num2;
+            num2 = prompt("Second number?");
+            document.getElementById('demo2').innerHTML = num2;
+        </script>
+
+        <h1>Operators</h1>
     </body>
 </html>
