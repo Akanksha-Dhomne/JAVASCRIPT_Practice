@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JavaScript Operators</title>
+        <style>
+            table{
+                font-family: sans-serif;
+                border-collapse: collapse;
+                width: 50%;
+            }
+            td, th{
+                border:1px solid black; 
+                text-align: left;
+                padding: 8px;
+            }
+            tr:nth-child(even) {
+                background-color: #dddddd;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>JavaScript Assignment Operators</h1>
+        <p>Assignment operators assign values to JavaScript variables.</p>
+        <p><b>Additon Assignment Operator</b> <span style="color: red;background-color: #dddddd;">(+=)</span> adds a value to a variable.</p>
+
+        <h1>JavaScript Arithmetic</h1>
+        <h2>The += Operator</h2>
+        
+        <p id="demo"></p>
+
+        <script>
+            var x = 8;
+            x += 6;
+            document.getElementById("demo").innerHTML = x;
+        </script>
+
+        <br><hr><br>
+
+        <p id="demo2"></p>
+
+        <script>
+            let y = 8;
+            y -= 6;
+            document.getElementById("demo2").innerHTML = y;
+        </script>
+
+        <br><hr><br>
+
+        <p id="demo3"></p>
+
+        <script>
+            let z = 8;
+            z *= 6;
+            document.getElementById("demo3").innerHTML = z;
+        </script>
+
+        <br><hr><br>
+
+        <p id="demo4"></p>
+
+        <script>
+            let a = 8;
+            a /= 6;
+            document.getElementById("demo4").innerHTML = a;
+        </script>
+
+        <br><hr><br>
+
+        <p id="demo5"></p>
+
+        <script>
+            let s = 8;
+            s %= 6;
+            document.getElementById("demo5").innerHTML = s;
+        </script>
+
+        <br><hr><br>
+
+        <p id="demo6"></p>
+
+        <script>
+            let g = 8;
+            g **= 6;
+            document.getElementById("demo6").innerHTML = g;
+        </script>
+
+        <br><hr><br>
+
+        <h2>List of Arithmetic Operators</h2>
+        
+        <table>
+            <tr>
+                <th>Operator</th>
+                <th>Example</th>
+                <th>Same As</th>
+            </tr>
+            <tr>
+                <td>=</td>
+                <td>x = y</td>
+                <td>x = y</td>
+            </tr>
+            <tr>
+                <td>+=</td>
+                <td>x += y</td>
+                <td>x = x + y</td>
+            </tr>
+            <tr>
+                <td>-=</td>
+                <td>x -= y</td>
+                <td>x = x - y</td>
+            </tr>
+            <tr>
+                <td>*=</td>
+                <td>x *= y</td>
+                <td>x = x * y</td>
+            </tr>
+            <tr>
+                <td>/=</td>
+                <td>x /= y</td>
+                <td>x = x / y</td>
+            </tr>
+            <tr>
+                <td>%=</td>
+                <td>x %= y</td>
+            </tr>
+            <tr>
+                <td>**=</td>
+                <td>x **= y</td>
+                <td>x = x ** y</td>
+            </tr>
+        </table>
+    </body>
+</html>
