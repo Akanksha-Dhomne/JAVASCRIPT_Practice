@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JavaScript const</title>
+    </head>
+    <body>
+        <h1>JavaScript const</h1>
+        <p>Variables defined with <span style="color: red;background-color: aliceblue;">const </span>cannot be <b>Redeclared</b></p>
+        <p>Variables defined with <span style="color: red;background-color: aliceblue;">const </span>cannot be <b>Reassigned</b></p>
+        <p>Variables defined with <span style="color: red;background-color: aliceblue;">const </span>have <b>Block Scope</b></p>
+
+        <h2>Cannot be Reassigned</h2>
+        <p>A <span style="color: red;background-color: aliceblue;">const </span><b>varisble cannot be Reassigned</b></p>
+        
+        <p id="demo"></p>
+
+        <script>
+            const pi = 3.1415926535589793;
+            pi = 3.14;
+            console.log(pi)
+        </script>
+
+        <br><hr><br>
+
+        <p id="demo2"></p>
+
+        <script>
+            try{
+                const PI = 3.1415926535589793;
+                PI = 3.14;
+            }
+            catch (err){
+                document.getElementById("demo2").innerHTML = err;
+            }
+        </script>
+
+        <hr><hr>
+        
+        <h2>Must be Assigned</h2>
+        <p>JavaScript <span style="color: red;background-color: aliceblue;">const </span>variables must be assigned a value when they are declared:</p>
+        
+        <h3 style="background-color: rgb(161, 245, 161);">Correct :- <br>
+            const PI = 3.14568347984;
+        </h3>
+
+        <h3 style="background-color:pink;">Incorrect :- <br>
+            const PI; <br>
+            const PI = 3.14568347984;
+        </h3>
+
+        <h2>When to use JavaScript const?</h2>
+        <p><b>Always declare a variable with <span style="color: red;background-color: aliceblue;">const </span>when you know that the value should not be changed.</b></p>
+        <p>use <span style="color: red;background-color: aliceblue;">const </span>when you declare:</p>
+        <ul>
+            <li><b><span style="color: red;background-color: aliceblue;">A new Array</span></b></li>
+            <li><b><span style="color: red;background-color: aliceblue;">A new Object</span></b></li>
+            <li><b><span style="color: red;background-color: aliceblue;">A new Function</span></b></li>
+            <li><b><span style="color: red;background-color: aliceblue;">A new RegExp</span></b></li>
+        </ul>
+        
+        <h2>Constant Objects and Arrays</h2>
+        <p>The keyword <span style="color: red;background-color: aliceblue;">const </span> is a little misleading.</p>
+        <p>It does not define a constant value. It defines a constant reference to a value.</p>
+        <p>Because of this you can NOT:</p>
+        <ul>
+            <li><b>Reassign a constant value</b></li>
+            <li><b>Reassign a constant array</b></li>
+            <li><b>Reassign a constant object</b></li>
+        </ul>
+        <p>But you CAN:</p>
+        <ul>
+            <li><b>Change the elements of constant array</b></li>
+            <li><b>Change the properties of constant object</b></li>
+        </ul>
+    </body>
+</html>

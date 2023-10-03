@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JavaScript Const</title>
+    </head>
+    <body>
+        <h1>Constant Object</h1>
+        <p>You can change the properties of a constant object:</p>
+        <p>Declaring a constant object does NOT make the objects properties unchangeable:</p>
+
+        <p id="demo"></p>
+
+        <script>
+            //Create an Object:
+            const car = {type:"Toyota", model:"800", color:"blue"};
+
+            //Change an property:
+            car.color = "pink";
+
+            //Add an property:
+            car.owner = "John Deo";
+
+            //Display the property:
+            document.getElementById("demo").innerHTML = "Car Owner is " + car.owner;
+        </script>
+
+        <p>But you can NOT reassign the object:</p>
+        <h3 style="background-color: pink;">Incorrect way :- <br><br>
+            const car = {type:"Toyota", model:"800", color:"blue"};  <br>
+            car = {type:"Volvo", model:"EX60", color:"red"};
+        </h3>
+    </body>
+</html>

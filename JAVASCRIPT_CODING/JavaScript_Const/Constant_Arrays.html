@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JavaScript Const</title>
+    </head>
+    <body>
+        <h1>Constant Arrays</h1>
+        <p>You can change the elements of a constant array:</p>
+        <p>Declaring a constant array does NOT make the elements unchangeable:</p>
+
+        <p id="demo"></p>
+
+        <script>
+            //Create an Array:
+            const cars = ["Volvo", "Saab", "BMW"];
+
+            //Change an Element:
+            cars [0] = "Toyota";
+
+            //Add an Element:
+            cars.push("Audi");
+
+            //Add an Element:
+            cars.push("Maruti")
+
+            //Display the Array:
+            document.getElementById("demo").innerHTML = cars;
+        </script>
+
+        <p>But you can NOT reassign the array:</p>
+        <h3 style="background-color: pink;">Incorrect way :- <br><br>
+            const cars = ["Volvo", "Saab", "BMW"];  <br>
+            cars = ["Toyota", "Saab", "Audi"]
+        </h3>
+    </body>
+</html>
