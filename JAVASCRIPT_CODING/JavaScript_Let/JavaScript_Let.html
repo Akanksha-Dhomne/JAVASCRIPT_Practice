@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JavaScript Let</title>
+    </head>
+    <body>
+        <h1>JavaScript Let</h1>
+        <p>Variables defined with <span style="color: red;background-color: aliceblue;">let </span>cannot be <b>Redeclared</b> but can <b>Reassign new value</b></p>
+        <p>Variables defined with <span style="color: red;background-color: aliceblue;">let </span> must be <b>Declared</b> before use</p>
+        <p>Variables defined with <span style="color: red;background-color: aliceblue;">let </span>have <b>Block Scope</b></p>
+
+        <h2>Cannot be Redeclared</h2>
+        <p>Variables defined with <span style="color: red;background-color: aliceblue;">let </span><b>cannot be Redeclared</b></p>
+        <p>You can not accidentally redeclare a variable declared with <span style="color: red;background-color: aliceblue;">let </span></p>
+        <p>With <span style="color: red;background-color: aliceblue;">let </span>we can <b>not</b> do this:</p>
+        <p>let x = "John Doe"; <br>
+           let x = 0;
+        </p>
+
+        <p>With <span style="color: red;background-color: aliceblue;">var </span>you can:</p>
+        <p>var x = "John Doe"; <br>
+           var x = 0;
+        </p>
+
+        <h2>Block Scope</h2>
+        <p>JavaScript had <b>Global Scope</b> and <b>Function Scope</b>.</p>
+        <p>ES6 introduced two important new JavaScript keywords: <span style="color: red;background-color: aliceblue;">let</span> and <span style="color: red;background-color: aliceblue;">const</span>.</p>
+        <p>These two keywords provide <b>Block Scope</b> in JavaScript.</p>
+        <p>Variables declared inside a { } block cannot be accessed from outside the block:</p>
+
+        <p>{
+            let x = 2;
+        }
+        // x can Not br used here
+        </p>
+
+        <p>Variables declared with the <span style="color: red;background-color: aliceblue;">var </span>keyword can NOT have block scope.</p>
+        <p>Variables declared inside a { } block can be accessed from outside the block.</p>
+
+        <p>{
+            var x = 2;
+        }
+        //x CAN be used here
+        </p>
+
+        <h2>Redeclaring Variables</h2>
+        <p>Redeclaring a variable using the <span style="color: red;background-color: aliceblue;">var </span>keyword can impose problems.</p>
+        <p>Redeclaring a variable inside a block will also redeclare the variable outside the block:</p>
+         
+        <h1>Incae of var</h1>
+        <h2>Redeclaring a Variable Using var</h2>
+
+        <p id="demo"></p>
+
+        <script>
+            var x = 6;
+            //here x is 6
+
+            {
+                var x = 8;
+                //here x is 8
+            }
+
+            /* here x is 8 will print bcoz we are using var keyword which is accessable
+             in both inside or outside the block */
+            document.getElementById('demo').innerHTML = x;
+        </script>
+
+        <br><hr><br>
+
+        <h1>Incase of let</h1>
+        <h2>Redeclaring a Variable Using let</h2>
+        <p>Redeclaring a variable using the <span style="color: red;background-color: aliceblue;">let </span>keyword can solve this problems.</p>
+        <p>Redeclaring a variable inside a block will not redeclare the variable outside the block:</p>
+
+        <p id="demo2"></p>
+
+        <script>
+            let y = 6;
+            // here y is 6
+
+            {
+                let y = 8;
+                //here y is 8
+            }
+
+            //here y is 6 will execute 
+            document.getElementById("demo2").innerHTML = y;
+        </script>
+    </body>
+</html>
