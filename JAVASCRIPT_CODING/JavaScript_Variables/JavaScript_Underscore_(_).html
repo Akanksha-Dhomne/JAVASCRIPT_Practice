@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JavaScript Variables</title>
+    </head>
+    <body>
+        <h1>JavaScript Underscore (_)</h1>
+        <p>Since JavaScript treats a dollar sign as a letter, identifiers containing $ are valid variable names:</p>
+
+        <p id="demo"></p>
+
+        <script>
+            let _x = 8;
+            let my_Choice = 6;
+            document.getElementById('demo').innerHTML = _x + my_Choice;
+        </script>
+
+        <br><hr><br>
+
+        <p id="demo2"></p>
+
+        <script>
+            let _whoo = "who invented pi?"
+            let personn_name= 'Archimedes of Syracuse';
+            let _answerr_ = "Archimedes's constant";
+            document.getElementById("demo2").innerHTML = 
+            _whoo + "<br>" + personn_name + "<br>" + _answerr_;
+        </script>
+
+        <p>Using the underscore is not very common in JavaScript, but a convention among professional programmers is to use it as an alias for "private (hidden)" variables.</p>
+    </body>
+</html>

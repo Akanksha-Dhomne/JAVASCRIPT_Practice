@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JavaScript Variables</title>
+    </head>
+    <body>
+        <h1>JavaScript Dollar Sign $</h1>
+        <p>Since JavaScript treats a dollar sign as a letter, identifiers containing $ are valid variable names:</p>
+
+        <p id="demo"></p>
+
+        <script>
+            let $$$$$ = 8;
+            let $$myChoice = 6;
+            document.getElementById('demo').innerHTML = $$$$$ + $$myChoice;
+        </script>
+
+        <p>Using the dollar sign is not very common in JavaScript, but professional programmers often use it as an alias for the main function in a JavaScript library.</p>
+        <p>In the JavaScript library jQuery, for instance, the main function $ is used to select HTML elements. In jQuery <b>$("p");</b> means "select all p elements".</p>
+        <br><hr><br>
+
+        <p id="demo2"></p>
+
+        <script>
+            let $$whoo = "who invented pi?"
+            let $personn = 'Archimedes of Syracuse';
+            let answerr = "Archimedes's constant";
+            document.getElementById("demo2").innerHTML = 
+            $$whoo + "<br>" + $personn + "<br>" + answerr;
+        </script>
+    </body>
+</html>

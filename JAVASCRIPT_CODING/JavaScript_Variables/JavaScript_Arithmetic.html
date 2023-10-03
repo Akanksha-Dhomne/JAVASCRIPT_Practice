@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JavaScript Variables</title>
+    </head>
+    <body>
+        <h1>JavaScript Arithmetic</h1>
+        <p>As with algebra, you can do arithmetic with JavaScript variables, using operators like <span style="color: red;background-color: aliceblue;">=</span> and <span style="color: red;background-color: aliceblue;">+</span>:</p>
+        <p>The result of adding 8 + 6 + 2 is:</p>
+
+        <p id="demo"></p>
+
+        <script>
+            let x = 8 + 6 + 2;
+            document.getElementById('demo').innerHTML = x;
+        </script>
+
+        <br><hr><br>
+
+        <p>You can also add strings, but strings will be concatenated:</p>
+        <p>The result of adding "John" + " " + "Doe" is:</p>
+        <p id="demo2"></p>
+
+        <script>
+            let y = "John" + " " + "Doe";
+            document.getElementById("demo2").innerHTML = y;
+        </script>
+
+        <br><hr><br>
+
+        <p>Also try this:</p>
+        <p>The result of adding "8" + 6 + 0 + 2 is:</p>
+        <p id="demo3"></p>
+
+        <script>
+            let z = "8" + 6 + 0 + 2;
+            document.getElementById("demo3").innerHTML = z;
+        </script>
+
+        <h3 style="background-color: bisque;">NOTE : If you put a number in quotes, the rest of the numbers will be treated as strings, and concatenated.</h3>
+    
+        <br><hr><br>
+
+        <p>Now try this:</p>
+        <p>The result of adding 8 + 6 + "2" is:</p>
+        <p id="demo4"></p>
+
+        <script>
+            let w = 8 + 6 + "2";
+            document.getElementById("demo4").innerHTML = w;
+        </script>
+
+    </body>
+</html>

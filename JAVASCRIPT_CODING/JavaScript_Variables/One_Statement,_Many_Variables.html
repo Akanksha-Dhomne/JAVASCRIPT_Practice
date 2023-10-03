@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JavaScript Variables</title>
+    </head>
+    <body>
+        <h1>One Statement, Many Variables</h1>
+        <p>You can declare many variables in one statement.</p>
+        <p>Start the statement with <span style="color: red;background-color: aliceblue;">let </span>and separate the variables by <b>comma</b>:</p>
+        
+        <br><hr><br>
+
+        <p id="demo"></p>
+
+        <script>
+            let person = "john Doe", carName = "Toyota", price = 100;
+            document.getElementById('demo').innerHTML = carName;
+            // document.getElementById('demo').innerHTML = price;
+        </script>
+
+        <br><hr><br>
+
+        <p>A declaration can span multiple lines:</p>
+        <p id="demo2"></p>
+
+        <script>
+            let person2 = "john Doe";
+                carName2 = "Volvo";
+                price2 = 100;
+            document.getElementById("demo2").innerHTML = person2;
+        </script>
+
+        <br><hr><br>
+
+        <p>best way to define the property and value:</p>
+        <p id="demo3"></p>
+
+        <script>
+            let person3 = "john Doe";
+            let carName3 = "Volvo";
+            let price3 = 100;
+            document.getElementById("demo3").innerHTML = price3;
+        </script>
+    </body>
+</html>

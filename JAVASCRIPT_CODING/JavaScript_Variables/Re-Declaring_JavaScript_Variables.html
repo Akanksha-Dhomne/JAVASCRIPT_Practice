@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JavaScript Variables</title>
+    </head>
+    <body>
+        <h1>Re-Declaring JavaScript Variables</h1>
+        <p>If you re-declare a JavaScript variable declared with <span style="color: red;background-color: aliceblue;">var </span>it will not lose its value.</p>
+        <p>The variable <span style="color: red;background-color: aliceblue;">carName </span>will still have the value "Volvo" after the execution of these statements:</p>
+        
+        <p id="demo"></p>
+
+        <script>
+            var carName = "Volvo";
+            var carName;
+            document.getElementById('demo').innerHTML = carName;
+        </script>
+
+        <br><hr><br>
+
+        <h3 style="background-color: bisque;">NOTE:</h3>
+        <p style="background-color: bisque;">You cannot re-declare a variable declared with <span style="color:red;background-color: aliceblue;">let </span>or <span style="color: red;background-color: aliceblue;">const</span>.</p>
+        <p style="background-color: bisque;">This will not work:</p>
+        <p style="background-color: bisque;">let carName = "Volvo"; <br>
+           let carName;
+        </p>
+
+        <br><hr><br>
+      
+        <h2>Using propmt:</h2>
+        <p>This is possible in onlt let case</p>
+        <p id="demo2"></p>
+
+        <script>
+            let carName2;
+            carName2 = prompt("Enter any Number");
+            document.getElementById("demo2").innerHTML = carName2
+        </script>
+    </body>
+</html>

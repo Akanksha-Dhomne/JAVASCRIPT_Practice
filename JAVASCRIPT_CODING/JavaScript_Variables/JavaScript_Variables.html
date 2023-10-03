@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JavaScript Variables</title>
+    </head>
+    <body>
+        <h1>JavaScript Variables</h1>
+        <h2>Variables are Containers for Storing Data</h2>
+        <h3>JavaScript Variables can be declared in 4 ways:</h3>
+        <ul>
+            <li>Automatically</li>
+            <li>Using <span style="color: red;background-color: aliceblue;">var</span></li>
+            <li>Using <span style="color: red;background-color: aliceblue;">let</span></li>
+            <li>Using <span style="color: red;background-color: aliceblue;">const</span></li>
+        </ul>
+        <p>In this first example, <span style="color: red;background-color: aliceblue;">x</span>, <span style="color: red;background-color: aliceblue;">y</span>, <span style="color: red;background-color: aliceblue;">z</span> are undeclared variables.</p>
+        <p>They are automatically declared when first used:</p>
+
+        <p id="demo"></p>
+
+        <script>
+            x = 6;
+            y = 8;
+            z = x + y;
+            document.getElementById('demo').innerHTML = "The value of z is : " + z;
+        </script>
+
+        <p>It is considered good programming practice to always declare variables before use.</p>
+        <p>From the examples you can guess:</p>
+        <ul>
+            <li>x stores the value 6</li>
+            <li>y stores the value 8</li>
+            <li>z stores the value 14</li>
+        </ul>
+
+    </body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JavaScript Variables</title>
+    </head>
+    <body>
+        <h1>Mixed Example</h1>
+        <p>In this example, price1, price2, and total are variables.</p>
+
+        <p id="demo"></p>
+
+        <script>
+            const price1 = 8;
+            const price2 = 6;
+            let total = price1 + price2;
+            document.getElementById('demo').innerHTML = "The total is: " + total;
+        </script>
+
+        <p>The two variables <span style="color: red;background-color: aliceblue;">price1 </span>and <span style="color: red;background-color: aliceblue;">price2 </span>are declared with the <span style="color: red;background-color: aliceblue;">const</span> keyword.</p>
+        <p>These are constant values and cannot be changed.</p>
+        <p>The variable <span style="color: red;background-color: aliceblue;">total</span> is declared with the <span style="color: red;background-color: aliceblue;">let</span> keyword.</p>
+        <p>The value <span style="color: red;background-color: aliceblue;">total </span>can be changed.</p>
+
+        <h2>When to Use var, let, or const?</h2>
+        <ol>
+            <li>Always declare variables</li>
+            <li>Always use <span style="color: red;background-color: aliceblue;">const </span>if the value should not be changed.</li>
+            <li>Always use <span style="color: red;background-color: aliceblue;">const</span> if the type should not be changed (Arrays and Objects)</li>
+            <li>Only use <span style="color: red;background-color: aliceblue;">let</span>if you can't use <span style="color: red;background-color: aliceblue;">const</span></li>
+            <li>Onlt use <span style="color: red;background-color: aliceblue;">var </span>if you MUST support old browsers.</li>
+        </ol>
+
+        <h2>Just Like Algebra</h2>
+        <p>Just like in algebra, variables hold values:</p>
+        <p>let x = 6; <br> let y = 8;</p>
+        <p>Just like in algebra, variables are used in expressions:</p>
+        <p>let z = x + y;</p>
+        <p>From the example above, you can guess that the total is calculated to be 14.</p>
+
+        <h3 style="background-color:pink;">NOTE: <br><br>
+            Variables are containers for storing values.
+        </h3>
+    </body>
+</html>

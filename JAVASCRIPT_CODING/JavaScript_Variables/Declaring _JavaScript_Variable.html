@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JavaScript Variables</title>
+    </head>
+    <body>
+        <h1>Declaring a JavaScript Variable</h1>
+        <p>Creating a variable in JavaScript is called "declaring" a variable.</p>
+        <p>You declare a JavaScript variable with the <span style="color: red;background-color: aliceblue;">var </span>or the <span style="color: red;background-color: aliceblue;">let </span>keyword:</p>
+        <p>var carName;</p>
+        <p>OR</p>
+        <p>let carName;</p>
+        <p>After the declaration, the variable has no value (technically it is <span style="color: red;background-color: aliceblue;">undefined</span>).</p>
+        <p>To <b>assign</b> a value to the variable, use the equal sign:</p>
+        <p>carName = "Volvo";</p>
+        <p>You can also assign a value to the variable when you declare it:</p>
+        <p>let carName = "Volvo";</p>
+        <p>In the example below, we create a variable called carName and assign the value "Volvo" to it.</p>
+        <p>Then we "output" the value inside an HTML paragraph with id="demo":</p>
+
+        <br><hr><br>
+
+        <h2>Value = undefined</h2>
+        <p>In computer programs, variables are often declared without a value. The value can be something that has to be calculated, or something that will be provided later, like user input.</p>
+        <p>A variable declared without a value will have the value <span style="color: red;background-color: aliceblue;">undefined</span>.</p>
+        <p>The variable carName will have the value <span style="color: red;background-color: aliceblue;">undefined</span> after the execution of this statement:</p>
+
+        <p id="demo"></p>
+
+        <script>
+            let carName;
+            document.getElementById('demo').innerHTML = carName;
+        </script>
+
+        <br><hr><br>
+          
+        <p id="demo2"></p>
+
+        <script>
+            let carName2;
+            carName2 = "Volvo"
+            document.getElementById("demo2").innerHTML = carName2;
+        </script>
+
+        <br><hr><br>
+
+        <p id="demo3"></p>
+
+        <script>
+            let carName3 = "Toyota Corolla";
+            document.getElementById("demo3").innerHTML = carName3;
+        </script>
+
+        <p>It's a good programming practice to declare all variables at the beginning of a script.</p>
+    </body>
+</html>
