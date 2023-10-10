@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Javascript Data Types</title>
+    </head>
+    <body>
+        <h1>Empty Values</h1>
+        <p>An empty value has nothing to do with <span style="color: red;background-color: aliceblue;">Undefined </span>.</p>
+        <p>An empty string has both a legal value and a type.</p>
+
+        <p id="demo"></p>
+        <script>
+            let car = "";             
+            document.getElementById("demo").innerHTML = "The value is :" + car + "<br>" + "The type is : " + typeof car;
+        </script>
+
+        <hr>
+
+        <p>Any variable can be emptied, by setting the value to <span style="color: red;background-color: aliceblue;">Undefined </span>.The type will also be <span style="color: red;background-color: aliceblue;">Undefined </span>.</p>
+    
+        <p id="demo2"></p>
+        <script>
+            let car2 = "Maruti";
+            car2 = undefined;
+            document.getElementById("demo2").innerHTML = "THe value is : " + car2 + "<br>" + "The type is : " + typeof car2;
+        </script>
+    </body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Javascript Data Types</title>
+    </head>
+    <body>
+        <h1>The typeof Operator</h1>
+        <p>You can use the JavaScript <span style="color: red;background-color: aliceblue;">typeof</span> operator to find the type of a JavaScript variable.</p>
+        <p>The <span style="color: red;background-color: aliceblue;">typeof</span> operator returns the type of a variable or an expression:</p>
+
+        <p id="demo"></p>
+
+        <script>
+            document.getElementById("demo").innerHTML =
+            typeof "" + "<br>" + typeof "John" + "<br>" + typeof "John Doe" + "<br>" + typeof 50;
+        </script>
+
+        <hr>
+
+        <p id="demo2"></p>
+
+        <script>
+            document.getElementById("demo2").innerHTML = 
+            typeof 0 + "<br>" + typeof 314 + "<br>" + typeof 3.14 + "<br>" + typeof (4) + "<br>" + typeof (8 + 6) + "<br>" + typeof "John Doe"; 
+        </script>
+    </body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Javascript Data Types</title>
+    </head>
+    <body>
+        <h1>Undefined</h1>
+        <p>In JavaScript, a variable without a value, has the value <span style="color: red;background-color: aliceblue;">Undefined </span>.The type is also <span style="color: red;background-color: aliceblue;">Undefined </span>.</p>
+
+        <p id="demo"></p>
+        <script>
+            let car;             
+            document.getElementById("demo").innerHTML = car + "<br>" + typeof car;
+        </script>
+
+        <hr>
+
+        <p>Any variable can be emptied, by setting the value to <span style="color: red;background-color: aliceblue;">Undefined </span>.The type will also be <span style="color: red;background-color: aliceblue;">Undefined </span>.</p>
+    
+        <p id="demo2"></p>
+        <script>
+            let car2 = "Maruti";
+            car2 = undefined;
+            document.getElementById("demo2").innerHTML = car2 + "<br>" + typeof car2;
+        </script>
+    </body>
+</html>

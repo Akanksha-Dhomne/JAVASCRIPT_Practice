@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Javascript Data Types</title>
+    </head>
+    <body>
+        <h1>JavaScript Objects</h1>
+        <p>JavaScript objects are written with curly braces {}.</p>
+        <p>Object properties are written as name:value pairs, separated by commas.</p>
+
+        <p id="demo"></p>
+        <script>
+            const person = {
+                firstName : "John", lastName : "Doe", age : 50, eyeColor : "pink"};
+        
+            document.getElementById("demo").innerHTML = person.firstName + " is " + person.age + " years old.";
+        </script>
+
+        <p>The object (person) in the example above has 4 properties: firstName, lastName, age, and eyeColor.</p>
+        
+        <hr>
+         
+        <p id="demo2"></p>
+        <script>
+            const person1 = {
+                FirstName : "sweetu", LastName : "rud", Age : 80};
+            document.getElementById("demo2").innerHTML = person1.FirstName + " Surname is " + person1.LastName + " and her age is " + person1.Age + ".";
+        </script>
+    </body>
+</html>
