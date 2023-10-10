@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JavaScript Operators</title>
+        <style>
+            table{
+                font-family: sans-serif;
+                border-collapse: collapse;
+                width: 50%;
+            }
+            td, th{
+                border:1px solid black; 
+                text-align: left;
+                padding: 8px;
+            }
+            tr:nth-child(even) {
+                background-color: #dddddd;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>JavaScript Arithmetic</h1>
+        <h2>JavaScript Arithmetic Operators</h2>
+        <p>Arithmetic operators perform arithmetic on numbers (literals or variables).</p>
+
+        <h2>List of Arithmetic Operator</h2>
+        <table>
+            <tr>
+                <th>Operator</th>
+                <th>Description</th>
+            </tr>
+            <tr>
+                <td>+</td>
+                <td>Addition</td>
+            </tr>
+            <tr>
+                <td>-</td>
+                <td>Subtraction</td>
+            </tr>
+            <tr>
+                <td>*</td>
+                <td>Multiplication</td>
+            </tr>
+            <tr>
+                <td>**</td>
+                <td>Exponentiation (ES2016)</td>
+            </tr>
+            <tr>
+                <td>/</td>
+                <td>Division</td>
+            </tr>
+            <tr>
+                <td>%</td>
+                <td>Modulus (Division Remainder)</td>
+            </tr>
+            <tr>
+                <td>++</td>
+                <td>Increment</td>
+            </tr>
+            <tr>
+                <td>--</td>
+                <td>Decrement</td>
+            </tr>
+        </table>
+
+        <h2>Arithmetic Operations</h2>
+        <p>A typical arithmetic operation operates on two numbers.</p>
+        <p>The two numbers can be literals:</p>
+        <p>A typical arithmetic operation takes two numbers and produces a new number.</p>
+        
+        <p id="demo"></p>
+
+        <script>
+            let x = 1000 + 50;
+            document.getElementById("demo").innerHTML = x;
+        </script>
+
+        <br><hr><br>
+
+        <p>or variables:</p>
+
+        <p id="demo2"></p>
+
+        <script>
+            let a = 5000;
+            let b = 50;
+            let z = a + b;
+            document.getElementById("demo2").innerHTML = z;
+        </script>
+
+        <br><hr><br>
+
+        <p>or expressions:</p>
+
+        <p id="demo3"></p>
+
+        <script>
+            let w = 8;
+            let y = (100 + 50) * w;
+            document.getElementById("demo3").innerHTML = y;
+        </script>
+
+        <br><hr><br>
+
+        <h2>Operators and Operands</h2>
+        <p>The numbers (in an arithmetic operation) are called <b>operands</b>.</p>
+        <p>The operation (to be performed between the two operands) is defined by an <b>operator</b>.</p>
+
+        <table>
+            <tr>
+                <th>operand</th>
+                <th>operator</th>
+                <th>operand</th>
+            </tr>
+            <tr>
+                <td>100</td>
+                <td>+</td>
+                <td>50</td>
+            </tr>
+        </table>
+    </body>
+</html>
