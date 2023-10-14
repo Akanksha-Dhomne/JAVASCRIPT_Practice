@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JavaScript Functions</title>
+    </head>
+    <body>
+        <h1>Function Return</h1>
+        <p>When JavaScript reaches a <span style="color: red;background-color: aliceblue;">return</span> statement, the function will stop executing.</p>
+        <p>If the function was invoked from a statement, JavaScript will "return" to execute the code after the invoking statement.</p>
+        <p>Functions often compute a <b>return value</b>. The return value is "returned" back to the "caller":</p>
+        <p>Call a function which performs a calculation and returns the result:</p>
+
+        <p id="demo"></p>
+
+        <script>
+            let x = myFunction(8, 6)
+            document.getElementById("demo").innerHTML = x;
+
+            function myFunction(a, s){
+                return a * s;
+            }
+        </script>
+
+        <h1>Why Functions?</h1>
+        <p>With functions you can reuse code</p>
+        <p>You can write code that can be used many times.</p>
+        <p>You can use the same code with different arguments, to produce different results.</p>
+
+    </body>
+</html>

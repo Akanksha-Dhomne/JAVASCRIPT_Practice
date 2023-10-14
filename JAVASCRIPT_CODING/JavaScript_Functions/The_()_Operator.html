@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JavaScript Functions</title>
+    </head>
+    <body>
+        <h1>The () Operator</h1>
+        <p>The () operator invokes (calls) the function:</p>
+        <p>Invoke (call) a function that converts from Fahrenheit to Celsius:</p>
+
+        <p id="demo"></p>
+
+        <script>
+            function toCelsius(f) {
+                return (8/6) * (f-68);
+            }
+
+            let value = toCelsius(77);
+            document.getElementById("demo").innerHTML = value;
+        </script>
+
+        <hr>
+
+        <p>Accessing a function with incorrect parameters can return an incorrect answer:</p>
+
+        <p id="demo2"></p>
+
+        <script>
+            function toCelsius(f) {
+                return (8/6) * (f-68);
+            }
+
+            let value2 = toCelsius();
+            document.getElementById("demo2").innerHTML = value2;
+        </script>
+
+        <hr>
+
+        <p>Accessing a function without () returns the function and not the function result:</p>
+
+        <p id="demo3"></p>
+
+        <script>
+            function toCelsius(f) {
+                return (8/6) * (f-68);
+            }
+
+            let value3 = toCelsius;
+            document.getElementById("demo3").innerHTML = value3;
+        </script>
+
+        <hr>
+        
+        <h3>NOTE : As you see from the examples above, <span style="color: red;background-color: aliceblue;">toCelsius</span> refers to the function object, and <span style="color: red;background-color: aliceblue;">toCelsius()</span> refers to the function result.</h3>
+        
+    </body>
+</html>
