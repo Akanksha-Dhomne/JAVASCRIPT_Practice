@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JavaScript Objects</title>
+        <style>
+            table{
+                width:50%;
+                border-collapse: collapse;
+            }
+            td,th{
+                border:1px solid #dddddd;
+                text-align: left;
+                padding: 8px;
+            }
+            tr:nth-child(even) {
+                background-color: #dddddd;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Object Definition</h1>
+        <p>You define (and create) a JavaScript object with an object literal:</p>
+
+        <hr>
+
+        <p id="demo"></p>
+        <script>
+            //Create an Object:
+            const person = {firstName:"John", lastName:"Doe", age:"50", eyeColor:"blue"};
+            //Display some data from the object:
+            document.getElementById("demo").innerHTML = person.firstName + " is " + person.age + " years old.";
+        </script>
+         
+        <hr>
+
+        <p>Spaces and line breaks are not important. An object definition can span multiple lines:</p>
+
+        <hr>
+
+        <p id="demo2"></p>
+        <script>
+            //Create an Object:
+            const person2 = {
+                firstName:"John",
+                lastName:"Doe",
+                age:"80", 
+                eyeColor:"blue"};
+
+            //Display same data from the Object:
+            document.getElementById("demo2").innerHTML = person2.firstName + person2.lastName + " is " + person2.age + " years old.";
+        </script>
+
+        <hr>
+
+        <h1>Object Properties</h1>
+        <p>The <b>name:values</b> pairs in JavaScript objects are called <b>properties</b>:</p>
+    
+        <table>
+            <tr>
+                <th>Property</th>
+                <th>Property Value</th>
+            </tr>
+            <tr>
+                <td>firstName</td>
+                <td>John</td>
+            </tr>
+            <tr>
+                <td>lastName</td>
+                <td>Doe</td>
+            </tr>
+            <tr>
+                <td>age</td>
+                <td>50</td>
+            </tr>
+            <tr>
+                <td>eyeColor</td>
+                <td>blue</td>
+            </tr>
+        </table>
+    </body>
+</html>

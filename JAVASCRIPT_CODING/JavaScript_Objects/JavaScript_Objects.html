@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JavaScript Objects</title>
+    </head>
+    <body>
+        <h1>JavaScript Objects</h1>
+        <h2>Real Life Objects, Properties, and Methods</h2>
+        <p>In real life, a car is an<b> object</b></p>
+        <p>A car has <b>properties </b>like weight and color, and <b>methods </b>like start and stop:</p>
+        <p>All cars have the same <b>properties,</b> but the property <b>values </b>differ from car to car.</p>
+        <p>All cars have the same <b>methods</b> ,but the methods are performed <b>at different times.</b></p>
+
+        <h1>JavaScript Objects</h1>
+        <p>We have already learned that JavaScript variables are containers for data values.</p>
+        <p>This code assigns a <b>simple value</b> (Fiat) to a <b>variable </b>named car:</p>
+
+        <hr>
+
+        <p id="demo"></p>
+        <script>
+            //Create and display a variable:
+            let car = "Fiat";
+            document.getElementById("demo").innerHTML = car;
+        </script>
+         
+        <hr>
+
+        <p>Objects are variables too. But objects can contain many values.</p>
+        <p>This code assigns <b>many values</b> (Fiat, 500, white) to a <b>variable</b> named car:</p>
+    
+        <hr>
+
+        <p id="demo2"></p>
+        <script>
+            //Create an Object:
+            const car1 = {type:"Fiat", model:"500", color:"white"};
+
+            //Display same data from the Object:
+            document.getElementById("demo2").innerHTML = "The car Type is  " + car1.type;
+        </script>
+
+        <hr>
+
+        <p>The values are written as <b>name:value</b> pairs (name and value separated by a colon).</p>
+    
+        <p><b>It is a common practice to declare objects with the <span style="color: red;background-color: aliceblue;">const </span>keyword.</b></p>
+    </body>
+</html>

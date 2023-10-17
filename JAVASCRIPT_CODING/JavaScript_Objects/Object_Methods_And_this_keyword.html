@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JavaScript Objects</title>
+        <style>
+            table{
+                width:100%;
+                border-collapse: collapse;
+            }
+            td,th{
+                border:1px solid #dddddd;
+                text-align: left;
+                padding: 8px;
+            }
+            tr:nth-child(even) {
+                background-color: #dddddd;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Object Methods</h1>
+        <p>Objects can also have <b>methods</b>.</p>
+        <p>Methods are <b>actions</b> that can be performed on objects.</p>
+        <p>Methods are stored in properties as <b>function definitions</b>.</p>
+        
+        <table>
+            <tr>
+                <th>Property</th>
+                <th>Property Value</th>
+            </tr>
+            <tr>
+                <td>firstName</td>
+                <td>John</td>
+            </tr>
+            <tr>
+                <td>lastName</td>
+                <td>Doe</td>
+            </tr>
+            <tr>
+                <td>age</td>
+                <td>50</td>
+            </tr>
+            <tr>
+                <td>eyeColor</td>
+                <td>blue</td>
+            </tr>
+            <tr>
+                <td>fullName</td>
+                <td>function() {return this.firstName + " " + this.lastName;}</td>
+            </tr>
+        </table>
+
+        <p>A method is a function stored as a property.</p>
+
+        <h3>const person = { <br>
+            &nbsp;&nbsp;&nbsp; firstName: "John", <br>
+            &nbsp;&nbsp;&nbsp; lastName : "Doe", <br>
+            &nbsp;&nbsp;&nbsp; id       : 5566, <br>
+            &nbsp;&nbsp;&nbsp; fullName : function() { <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  return this.firstName + " " + this.lastName; <br>
+            &nbsp;&nbsp;&nbsp; } <br>
+          };
+        </h3>
+
+        <p>In the example above, <span style="color: red;background-color:aliceblue;">this </span>refers to the <b>person object</b>.</p>
+        <p>I.E. <b>this.firstName</b> means the <b>firstName</b> property of <b>this</b>.</p>
+        <p>I.E. <b>this.firstName</b> means the <b>firstName</b> property of <b>person</b>.</p>
+
+        <h1>What is this?</h1>
+        <p>In JavaScript, the <span style="color: red;background-color:aliceblue;">this</span> keyword refers to an <b>object</b>.</p>
+        <p><b>Which</b> object depends on how <span style="color: red;background-color:aliceblue;">this</span>  is being invoked (used or called).</p>
+        <p>The <span style="color: red;background-color:aliceblue;">this</span> keyword refers to different objects depending on how it is used:</p>
+
+        <table>
+            <tr>
+                <td>In an object method, <span style="color: red;background-color:aliceblue;">this</span>  refers to the <b>object</b>.</td>
+            </tr>
+            <tr>
+                <td>Alone <span style="color: red;background-color:aliceblue;">this</span> refers to the <b>global object</b>.</td>
+            </tr>
+            <tr>
+                <td>In a function, <span style="color: red;background-color:aliceblue;">this</span> refers to the <b>global object</b>.</td>
+            </tr>
+            <tr>
+                <td>In a function, in strict mode, <span style="color: red;background-color:aliceblue;">this</span> is <span style="color: red;background-color:aliceblue;">undefined</span>.</td>
+            </tr>
+            <tr>
+                <td>In an event, <span style="color: red;background-color:aliceblue;">this</span>  refers to the <b>element</b> that received the event.</td>
+            </tr>
+            <tr>
+                <td>Methods like <span style="color: red;background-color:aliceblue;">call()</span>, <span style="color: red;background-color:aliceblue;">apply()</span>, and <span style="color: red;background-color:aliceblue;">bind() </span> can refer <span style="color: red;background-color:aliceblue;">this</span> to <b>any object</b>.</td>
+            </tr>
+        </table>
+
+        <h3>NOTE : <span style="color: red;background-color:aliceblue;">this</span> is not a variable. It is a keyword. You cannot change the value of <span style="color: red;background-color:aliceblue;">this</span>.</h3>
+        
+        <h1>The <b>this</b> Keyword</h1>
+        <p>In a function defination, <span style="color: red;background-color:aliceblue;">this</span>  refers to the "owner" of the function.</p>
+        <p>In a example above, <span style="color: red;background-color:aliceblue;">this</span> is the <b>person object</b> that "owns" the <span style="color: red;background-color:aliceblue;">fullname </span> function.</p>
+        <p>In other words, <span style="color: red;background-color:aliceblue;">this.firstName</span> means the <span style="color: red;background-color:aliceblue;">firstName</span> property of <b>this object</b>.</p>
+        
+        <h2>Accessing Object Methods</h2>
+        <p>You access an object method with the following syntax:</p>
+        <h3>objectName.methodName()</h3>
+
+        <p id="demo"></p>
+        <script>
+            //Create an Object:
+            const person = {
+                firstName:"John", 
+                lastName:"Doe", 
+                id : 8602,
+                fullName : function() {
+                    return this.firstName + " " + this.lastName;
+                }
+            };
+            //Display data from the object:
+            document.getElementById("demo").innerHTML = person.fullName();
+        </script>
+ 
+        <hr>
+
+        <p>If you access a method <b>without</b> the () parentheses, it will return the <b>function definition</b>:</p>
+        <p>If you access an object method without (), it will return the function definition:</p>
+
+        <hr>
+
+        <p id="demo2"></p>
+        <script>
+            //Create an Object:
+            const person2 = {
+                firstName:"John",
+                lastName:"Doe",
+                id : 8686,
+                fullName : function() {
+                    return this.firstName + " " + this.lastName;
+                }
+            };
+
+            //Display same data from the Object:
+            document.getElementById("demo2").innerHTML = person2.fullName;
+        </script>
+
+        <h1>Do Not Declare Strings, Numbers, and Booleans as Objects!</h1>
+        <p>When a JavaScript variable is declared with the keyword <b>"new"</b>, the variable is created as an object:</p>
+
+        <p>x = new String();   &nbsp;&nbsp;&nbsp;&nbsp;   // Declares x as a String object <br>
+            y = new Number();   &nbsp;&nbsp;&nbsp;&nbsp;   // Declares y as a Number object <br>
+            z = new Boolean();  &nbsp;&nbsp;&nbsp;&nbsp;   // Declares z as a Boolean object
+        </p>
+
+        <p>Avoid <b>String</b>, <b>Number</b>, and <b>Boolean</b> objects. They complicate your code and slow down execution speed.</p>
+    </body>
+</html>

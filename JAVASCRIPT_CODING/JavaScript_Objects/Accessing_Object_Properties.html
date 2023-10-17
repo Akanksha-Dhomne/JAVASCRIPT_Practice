@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JavaScript Objects</title>
+    </head>
+    <body>
+        <h1>Accessing Object Properties</h1>
+        <p>You can access object properties in two ways:</p>
+        <h3>objectName.propertyName</h3>
+        <p>OR</p>
+        <h3>objectName["propertyName"]</h3>
+        <p>There are two different ways to access an object property.</p>
+        <p>You can use person.property or person["property"].</p>
+
+        <p id="demo"></p>
+        <script>
+            //Create an Object:
+            const person = {
+                firstName:"John", 
+                lastName:"Doe", 
+                id  : 8602
+            };
+            //Display some data from the object:
+            document.getElementById("demo").innerHTML = person.firstName + "  " + person.lastName;
+        </script>
+         
+        <hr>
+
+        <p id="demo2"></p>
+        <script>
+            //Create an Object:
+            const person2 = {
+                firstName:"John", 
+                lastName:"Doe", 
+                id  : 8686
+            };
+            //Display some data from the object:
+            document.getElementById("demo2").innerHTML = person2["firstName"] + "  " + person2["lastName"];
+        </script>
+
+        <hr>
+
+        <p>JavaScript objects are containers for named values called properties.</p>
+    </body>
+</html>
