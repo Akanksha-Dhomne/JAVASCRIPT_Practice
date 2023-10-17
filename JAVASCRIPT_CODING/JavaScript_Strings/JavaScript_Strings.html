@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JavaScript Strings</title>
+    </head>
+    <body>
+        <h1>JavaScript Strings</h1>
+        <p>JavaScript strings are for storing and manipulating text.</p>
+        <p>A JavaScript string is zero or more characters written inside quotes.</p>
+
+        <p id="demo"></p>
+        <script>
+            let text = "John Doe";  // String written inside quotes
+            document.getElementById("demo").innerHTML = text;
+        </script>
+
+        <hr>
+
+        <p>You can use single or double quotes:</p>
+
+        <p id="demo2"></p>
+        <script>
+            let carName1 = "Maruti";   //double quotes
+            let carName2 = 'Volvo';    //Single quotes
+            document.getElementById("demo2").innerHTML = carName1 + " " + carName2;
+        </script>
+
+        <hr>
+
+        <p>You can use quotes inside a string, as long as they don't match the quotes surrounding the string:</p>
+
+        <p id="demo3"></p>
+        <script>
+            let Ans1 = "It's alright";
+            let Ans2 = "He is called 'Johnny'";
+            let Ans3 = 'He is called "Johnny"';
+            let Ans4 = `He is "called" 'Johnny'`;
+            document.getElementById("demo3").innerHTML = Ans1 + "<br>" + Ans2 + "<br>" + Ans3 + "<br>" + Ans4;
+        </script>
+    </body>
+</html>

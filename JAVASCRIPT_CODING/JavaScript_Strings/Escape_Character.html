@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JavaScript Strings</title>
+        <style>
+            table{
+                border: 2px solid gray;
+                width: 50%;
+                border-collapse: collapse;
+            }
+            th,td{
+                border: 2px solid gray;
+                padding: 8px;
+            }
+            tr:nth-child(even) {
+                background-color: #dddddd;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Escape Character</h1>
+        <p>Because strings must be written within quotes, JavaScript will misunderstand this string:</p>
+        <p style="background-color: pink;">let text = "We are the so-called "Vikings" from the north.";</p>
+        <p>The string will be chopped to "We are the so-called ".</p>
+        <p>The solution to avoid this problem, is to use the <b>backslash escape character</b>.</p>
+        <p>The backslash (\) escape character turns special characters into string characters:</p>
+
+        <table>
+            <tr>
+                <th>Code</th>
+                <th>Result</th>
+                <th>Description</th>
+            </tr>
+            <tr>
+                <th>\'</th>
+                <th>'</th>
+                <th>Single quote</th>
+            </tr>
+            <tr>
+                <th>\"</th>
+                <th>"</th>
+                <th>Double quote</th>
+            </tr>
+            <tr>
+                <th>\\</th>
+                <th>\</th>
+                <th>Backslash</th>
+            </tr>
+        </table>
+
+        <p>The sequence \"  inserts a double quote in a string:</p>
+
+        <p id="demo"></p>
+        <script>
+            let text = "The name of that man is \"John Doe\" he lives in \"Nagpur\" he is a \"kind\" person.";  // String written inside quotes
+            document.getElementById("demo").innerHTML = text;
+        </script>
+
+        <hr>
+
+        <p>The escape sequence \' inserts a single quote in a string.</p>
+
+        <p id="demo2"></p>
+        <script>
+            let text2 = 'It\'s alright.';
+            document.getElementById("demo2").innerHTML = text2;
+        </script>
+
+        <hr>
+
+        <p>The sequence \\  inserts a backslash in a string:</p>
+
+        <p id="demo3"></p>
+        <script>
+            let text3 = "The character \\ is called backslash.";
+            document.getElementById("demo3").innerHTML = text3;
+        </script>
+
+        <hr>
+
+        <p>Six other escape sequences are valid in JavaScript:</p>
+
+        <table>
+            <tr>
+                <th>Code</th>
+                <th>Result</th>
+            </tr>
+            <tr>
+                <td>\b</td>
+                <td>Backspace</td>
+            </tr>
+            <tr>
+                <td>\f</td>
+                <td>Form Feed</td>
+            </tr>
+            <tr>
+                <td>\n</td>
+                <td>New Line</td>
+            </tr>
+            <tr>
+                <td>\r</td>
+                <td>Carriage Return</td>
+            </tr>
+            <tr>
+                <td>\t</td>
+                <td>Horizontal Tabulator</td>
+            </tr>
+            <tr>
+                <td>\v</td>
+                <td>Vertical Tabulator</td>
+            </tr>
+        </table>
+        
+        <p>The 6 escape characters above were originally designed to control typewriters, teletypes, and fax machines. They do not make any sense in HTML.</p>
+        
+    </body>
+</html>

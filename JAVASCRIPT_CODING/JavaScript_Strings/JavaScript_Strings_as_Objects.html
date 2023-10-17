@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JavaScript Strings</title>
+    </head>
+    <body>
+        <h1>JavaScript Strings as Objects</h1>
+        <p>Normally, JavaScript strings are primitive values, created from literals:</p>
+        <h3>let x = "John";</h3>
+
+        <p>But strings can also be defined as objects with the keyword <span style="color: red;background-color: aliceblue;">new</span>:</p>
+        <h3>let y = new String("John");</h3>
+       
+        <p id="demo"></p>
+        <script>
+            //x is a String
+            let x = "John";
+            //y is an Object
+            let y = new String("John");
+            document.getElementById("demo").innerHTML = typeof x + "<br>" + typeof y;
+        </script>
+
+        <p>Do not create Strings objects.</p>
+        <p>The <span style="color: red;background-color: aliceblue;">new</span> complicates the code and slows down execution speed.</p>
+        <p>String objects can produce unexpected results:</p>
+
+        <hr>
+
+        <h2>Never Create Strings as Objects</h2>
+        <p>Strings and objects cannot be safely compared.</p>
+        <p>When using the <span style="color: red;background-color: aliceblue;">==</span> operator, x and y are <b>equal</b>:</p>
+
+        <p id="demo2"></p>
+        <script>
+            let a = "John";    // a is a  String
+            let b = new String ("John")  // b is an Object
+            document.getElementById("demo2").innerHTML = (a == b);
+        </script>
+
+        <hr>
+
+        <p>When using the <span style="color: red;background-color: aliceblue;">===</span> operator, x and y are <b>not equal</b>:</p>
+
+        <p id="demo3"></p>
+        <script>
+            let u = "John";    // a is a  String
+            let v = new String ("John")  // b is an Object
+            document.getElementById("demo3").innerHTML = (u === v);
+        </script>
+
+        <hr>
+
+        <p><span style="color: red;background-color: aliceblue;">(f == g)</span> true or false?</p>
+        
+        <p id="demo4"></p>
+        <script>
+            let g = new String ("John");    // g is an  Object
+            let f = new String ("John");    // f is an Object
+            document.getElementById("demo4").innerHTML = (f == g);
+        </script>
+
+        <hr>
+
+        <p><span style="color: red;background-color: aliceblue;">(n === m)</span> true or false?</p>
+
+        <p id="demo5"></p>
+        <script>
+            let n = new String ("John");    // n is an  Object
+            let m = new String ("John");    // m is an Object
+            document.getElementById("demo5").innerHTML = (n == m);
+        </script>
+
+        <p>Comparing two JavaScript objects <b>always</b> returns <b>false</b>.</p>
+    </body>
+</html>
