@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>JavaScript Events</head>
+    <body>
+        <h1>JavaScript Events</h1>
+        <p>HTML events are <b>"things"</b> that happen to HTML elements.</p>
+        <p>When JavaScript is used in HTML pages, JavaScript can <b>"react"</b> on these events.</p>
+         
+        <h2>HTML Events</h2>
+        <p>An HTML event can be something the browser does, or something a user does.</p>
+        <p>Here are some examples of HTML events:</p>
+        <ul>
+            <li>An HTML web page has finished loading</li>
+            <li>An HTML input field was changed</li>
+            <li>An HTML button was clicked</li>
+        </ul>
+        <p>Often, when events happen, you may want to do something.</p>
+        <p>JavaScript lets you execute code when events are detected.</p>
+        <p>HTML allows event handler attributes, <b>with JavaScript code</b>, to be added to HTML elements.</p>
+        
+        <p>With single quotes:</p>
+        <h3>element event='some JavaScript'</h3>
+        
+        <p>With double quotes:</p>
+        <h3>element event="some JavaScript"</h3>
+
+        <p>In the following example, an <span style="color:red;background-color: aliceblue;">onclick </span>attribute (with code), is added to a <span style="color:red;background-color: aliceblue;">button </span>element:</p>
+
+        <button 
+            onclick="document.getElementById('demo').innerHTML = Date()">The time is?
+        </button>
+        <p id="demo"></p>
+
+        <hr>
+
+        <p>In the example above, the JavaScript code changes the content of the element with id="demo2".</p>
+        <p>In the next example, the code changes the content of its own element (using <span style="color: red;background-color: aliceblue;">this class="innerHTML)</span>:</this></span></p>
+
+        <button
+            onclick="this.innerHTML = Date()">The time is?
+        </button>
+
+        <hr>
+
+        <h3>JavaScript code is often several lines long. It is more common to see event attributes calling functions:</h3>
+        <p>Click the button to display the date.</p>
+
+        <button
+            onclick="displayDate()">The time is?
+        </button>
+
+        <script>
+            function displayDate() {
+                document.getElementById("demo").innerHTML = Date();
+            }
+        </script>
+        <p id="demo"></p>
+
+    </body>
+</html>
