@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JavaScript String Methods</title>
+    </head>
+    <body>
+        <h1>JavaScript String Padding</h1>
+        <p>ECMAScript 2017 added two new string methods to JavaScript: <span style="color: red;background-color: aliceblue;">padStart() & padEnd() </span>to support padding at the beginning and at the end of a string.</p>
+
+        <h2>JavaScript String padStart()</h2>
+        <p>The <span style="color: red;background-color: aliceblue;">padStart() </span>method pads a string from the start.</p>
+        <p>It pads a string with another string (multiple times) until it reaches a given length.</p>
+        <p>Pad a string with "0" until it reaches the length 4:</p>
+
+        <p id="demo"></p>
+        <script>
+            let text = "7";
+            text = text.padStart(6,"0");
+            document.getElementById("demo").innerHTML = text;
+        </script>
+
+        <hr>
+
+        <p>Pad a string with "x" until it reaches the length 6:</p>
+
+        <p id="demo2"></p>
+        <script>
+            let text1 = "7";
+            text1 = text1.padStart(6,"x");
+            document.getElementById("demo2").innerHTML = text1;
+        </script>
+
+        <p>NOTE :  <br>
+            The padStart() method is a string method. <br>
+            To pad a number, convert the number to a string first. <br>
+        </p>
+       
+
+        <p id="demo3"></p>
+        <script>
+            let numb = "7";
+            let text2 = numb.toString();
+            document.getElementById("demo3").innerHTML = text2.padStart(6,0);
+        </script>
+
+        <br><hr><br>
+
+        <h2>JavaScript String padEnd()</h2>
+        <p>The <span style="color: red;background-color: aliceblue;">padEnd() </span>method pads a string from the end.</p>
+        <p>It pads a string with another string (multiple times) until it reaches a given length.</p>
+        <p>Pad a string with "0" until it reaches the length 4:</p>
+
+        <p id="Demo"></p>
+        <script>
+            let Text = "7";
+            Text = Text.padEnd(6,"0");
+            document.getElementById("Demo").innerHTML = Text;
+        </script>
+
+        <hr>
+
+        <p>Pad a string with "x" until it reaches the length 6:</p>
+
+        <p id="Demo2"></p>
+        <script>
+            let Text1 = "7";
+            Text1 = Text1.padEnd(6,"x");
+            document.getElementById("Demo2").innerHTML = Text1;
+        </script>
+
+        <p>NOTE :  <br>
+            The padEnd() method is a string method. <br>
+            To pad a number, convert the number to a string first. <br>
+        </p>
+       
+
+        <p id="Demo3"></p>
+        <script>
+            let Numb = "7";
+            let Text2 = Numb.toString();
+            document.getElementById("Demo3").innerHTML = Text2.padEnd(6,0);
+        </script>
+    </body>
+</html>

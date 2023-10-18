@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Extracting String Parts</title>
+    </head>
+    <body>
+        <h1>Extracting String Parts</h1>
+        <p>There are 3 methods for extracting a part of a string:</p>
+        <ul>
+            <li style="color: red;">slice(start, end)</li>
+            <li style="color: red;">substring(start, end)</li>
+            <li style="color: red;">substr(start, length)</li>
+        </ul>
+
+        <h1>JavaScript String slice()</h1>
+        <p><span style="color: red;background-color: aliceblue;">slice() </span>extracts a part of a string and returns the extracted part in a new string.</p>
+        <p>The method takes 2 parameters: start position, and end position (end not included).</p>
+        <p>The sliced (extracted) part of the string is:</p>
+
+        <p id="demo"></p>
+        <script>
+            let text = "Rose, lilly, lotus";
+            let part = text.slice(5,9);
+            document.getElementById("demo").innerHTML = part;
+        </script>
+
+        <h3 style="background-color:bisque;">NOTE :  <br>
+            JavaScript counts positions from zero. <br>
+            First position is 0.  <br>
+            Second position is 1. <br>
+        </h3>
+
+        <hr>
+
+        <h2>Examples of slice</h2>
+        <p>If you omit the second parameter, the method will slice out the rest of the string:</p>
+        <p>Extract a part of a string from position 6:</p>
+
+        <p id="demo2"></p>
+        <script>
+            let text1 = "Rose, lilly, lotus";
+            let part1 = text1.slice(6)
+            document.getElementById("demo2").innerHTML = part1;
+        </script>
+
+        <hr>
+
+        <p>If we have to extract single character then use at:</p>
+
+        <p id="Demo"></p>
+        <script>
+            let Text = "Rose, lilly, lotus";
+            let Part = Text.at(10)
+            document.getElementById("Demo").innerHTML = Part;
+        </script>
+        <hr>
+
+        <p>If a parameter is negative, the position is counted from the end of the string:</p>
+        <p>Extract a part of a string counting from the end:</p>
+
+        <p id="demo3"></p>
+        <script>
+            let text2 = "Rose, lilly, lotus";
+            let part2 = text2.slice(-10)
+            document.getElementById("demo3").innerHTML = part2;
+        </script>
+
+        <hr>
+
+        <p>This example slices out a portion of a string from position -10 to position -8:</p>
+        <p>Extract a part of a string and return the extracted parts in a new string:</p>
+
+        <p id="demo4"></p>
+        <script>
+            let text3 = "Rose, lilly, lotus";
+            let part3 = text3.slice(-12, -7)
+            document.getElementById("demo4").innerHTML = part3;
+        </script>   
+        
+        <br><hr><br>
+
+        <h1>JavaScript String substring()</h1>
+        <p><span style="color: red;background-color: aliceblue;">substring()</span> is similar to <span style="color: red;background-color: aliceblue;">slice()</span> .</p>
+        <p><b>The difference is that start and end values less than 0 are treated as 0</b> in <span style="color: red;background-color: aliceblue;">substring()</span>.</p>
+        <p>The substring() method extract a part of a string and returns the extracted parts in a new string:</p>
+
+        <p id="demo5"></p>
+        <script>
+            let str = "Rose, lilly, lotus";
+            document.getElementById("demo5").innerHTML = str.substring(-5,11);
+        </script>
+
+        <hr>
+
+        <p id="demo6"></p>
+        <script>
+            let str1 = "Rose, lilly, lotus";
+            document.getElementById("demo6").innerHTML = str1.substring(9, 18);
+        </script>
+
+        <p>If you omit the second parameter, substring() will slice out the rest of the string.</p>
+
+        <br><hr><br>
+
+        <h1>JavaScript String substr()</h1>
+        <p><span style="color: red;background-color: aliceblue;">substr()</span> is similar to<span style="color: red;background-color: aliceblue;"> slice().</span></p>
+        <p>The difference is that the second parameter specifies the <b>length</b> of the extracted part.</p>
+        <p>The substr() method extract a part of a string and returns the extracted parts in a new string:</p>
+
+        <p id="demo7"></p>
+        <script>
+            let str2 = "Rose, lilly, lotus";
+            document.getElementById("demo7").innerHTML = str2.substr(6,5);
+        </script>
+
+        <hr>
+
+        <p>If you omit the second parameter, substr() will slice out the rest of the string.</p>
+
+        <p id="demo8"></p>
+        <script>
+            let str3 = "Rose, lilly, lotus";
+            document.getElementById("demo8").innerHTML = str2.substr(4);
+        </script>
+
+        <hr>
+
+        <p>If the first parameter is negative, the position counts from the end of the string.</p>
+
+        <p id="demo9"></p>
+        <script>
+            let str4 = "Rose, lilly, lotus";
+            document.getElementById("demo9").innerHTML = str3.substr(-7);
+        </script>
+    </body>
+</html>

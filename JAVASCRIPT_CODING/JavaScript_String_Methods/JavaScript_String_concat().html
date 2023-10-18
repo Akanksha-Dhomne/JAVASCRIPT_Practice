@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JavaScript String Methods</title>
+    </head>
+    <body>
+        <h1>JavaScript String concat()</h1>
+        <p><span style="color: red;background-color: aliceblue;">concat() </span>joins two or more strings:</p>
+
+        <p id="demo"></p>
+        <script>
+            let text1 = "Hello";
+            let text2 = "How are you";
+            let text3 = "Nice to meet you!";
+            let text4 = text1.concat(" ",text2," ",text3);
+            document.getElementById("demo").innerHTML = text4;
+        </script>
+
+        <p>The <span style="color: red;background-color: aliceblue;">concat() </span>method can be used instead of the plus operator. These two lines do the same:</p>
+    
+        <h3>text = "Hello" + " " + "World!";  <br>
+            text = "Hello".concat(" ", "World!");
+        </h3>
+
+        <p>NOTE :  <br>
+            All string methods return a new string. They don't modify the original string  <br>
+            Formally said: <br>
+            Strings are immutable: Strings cannot be changed, only replaced.
+        </p>
+       
+    </body>
+</html>

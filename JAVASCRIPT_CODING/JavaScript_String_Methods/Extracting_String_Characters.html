@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JavaScript String Methods</title>
+    </head>
+    <body>
+        <h1>Extracting String Characters</h1>
+        <p>There are 3 methods for extracting string characters:</p>
+        <p><span style="color: red;background-color: aliceblue;">charAt(position)</span></p>
+        <p><span style="color: red;background-color: aliceblue;">charCodeAt(position)</span></p>
+        <p><span style="color: red;background-color: aliceblue;">Property access [ ]</span></p>
+       
+        <h2>JavaScript String charAt()</h2>
+        <p><span style="color: red;background-color: aliceblue;">charAt</span> method returns the character at a specified index (position) in a string:</p>
+
+        <p id="demo"></p>
+        <script>
+            var text = "Hello World!";
+            document.getElementById("demo").innerHTML = text.charAt(6);
+        </script>
+
+        <hr>
+
+        <h2>JavaScript String charCodeAt()</h2>
+        <p><span style="color: red;background-color: aliceblue;">charCodeAt()</span> method returns the unicode of the character at a specified index in a string:</p>
+        <p>The method returns a UTF-16 code (an integer between 0 and 65535).</p>
+
+        <p id="demo1"></p>
+        <script>
+            let text1 = "Hello World!";
+            document.getElementById("demo1").innerHTML = text.charCodeAt(7);
+        </script>
+
+        <hr>
+
+        <h2>Property Access</h2>
+        <p>ECMAScript 5 (2009) allows property access [ ] on strings:</p>
+
+        <p id="demo2"></p>
+
+        <script>
+            let text2 = "Hello World!";
+            document.getElementById("demo2").innerHTML = text[0];
+        </script>
+
+        <h3>NOTE:  <br>
+            Property access might be a little unpredictable: <br>
+            1. It makes strings look like arrays (but they are not) <br>
+            2. If no character is found, [ ] returns undefined, while charAt() returns an empty string. <br>
+            3. It is read only. str[0] = "A" gives no error (but does not work!)
+        </h3>
+        
+        <hr>
+
+        <p id="demo3"></p>
+
+        <script>
+            let text3 = "Hello World!";
+            text3[0] = "S"; //Does not Work
+            document.getElementById("demo3").innerHTML = text3;
+           
+        </script>
+    </body>
+</html>

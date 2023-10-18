@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JavaScript String Methods</title>
+    </head>
+    <body>
+        <h1>Converting to Upper and Lower Case</h1>
+        <p>A string is converted to upper case with <span style="color: red;background-color: aliceblue;">toUpperCase() </span>:</p>
+        <p>A string is converted to lower case with <span style="color: red;background-color: aliceblue;">tolowerCase() </span>:</p>
+
+        <h2>JavaScript String toUpperCase()</h2>
+
+        <button onclick="myFunction()">Try it</button>
+
+        <p id="demo">Please visit Microsoft!</p>
+        <script>
+            function myFunction() {
+                let text =  document.getElementById("demo").innerHTML;
+
+                document.getElementById("demo").innerHTML = text.toUpperCase();
+            }
+        </script>
+
+        <hr>
+
+        <button onclick="MyFunction()">Try it</button>
+
+        <p id="demo1">You look very Beautiful!</p>
+        <script>
+            function MyFunction() {
+                let text =  document.getElementById("demo1").innerHTML;
+
+                document.getElementById("demo1").innerHTML = text.toUpperCase();
+            }
+        </script>
+
+        <hr>
+
+        <h2>JavaScript String toLowerCase()</h2>
+
+        <button onclick="mySpecial()">Try it</button>
+
+        <p id="demo2">Please Visit Microsoft And Microsoft!</p>
+
+        <script>
+            function mySpecial() {
+                let text2 = document.getElementById("demo2").innerHTML;
+            
+                document.getElementById("demo2").innerHTML = text2.toLowerCase();
+            }
+        </script>
+
+        <hr>
+
+        <button onclick="MySpecial()">Try it</button>
+
+        <p id="demo4">Please Visit Microsoft!</p>
+
+        <script>
+            function MySpecial() {
+                let text3 = document.getElementById("demo4").innerHTML;
+
+                document.getElementById("demo4").innerHTML = text3.toLowerCase();
+            }        
+        </script>
+    </body>
+</html>

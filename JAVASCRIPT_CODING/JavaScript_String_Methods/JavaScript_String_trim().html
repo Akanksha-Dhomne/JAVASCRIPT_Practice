@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JavaScript String Methods</title>
+    </head>
+    <body>
+        <h1>JavaScript String trim()</h1>
+        <p>The <span style="color: red;background-color: aliceblue;">trim() </span>method removes whitespace from both sides of a string:</p>
+
+        <p id="demo"></p>
+        <script>
+            let text1 = "     Hello    World!    ";
+            let text2 = text1.trim();
+            document.getElementById("demo").innerHTML = "Length text1 = " + text1.length + " <br> Length text2 = " + text2.length;
+        </script>
+
+        <hr>
+
+        <h2>JavaScript String trimStart()</h2>
+        <p>The <span style="color: red;background-color: aliceblue;">trimStart() </span>method works like trim(), but removes whitespace only from the end of a string.</p>
+    
+        <p id="demo2"></p>
+        <script>
+            let text3 = "     Hello    World!    ";
+            let text4 = text3.trimStart();
+            document.getElementById("demo2").innerHTML = "Length text3 = " + text3.length + " <br> Length text4 = " + text4.length;
+        </script>
+
+        <hr>
+
+        <h2>JavaScript String trimEnd()</h2>
+        <p>The <span style="color: red;background-color: aliceblue;">trimEnd() </span>method works like trim(), but removes whitespace only from the start of a string.</p>
+    
+        <p id="demo3"></p>
+        <script>
+            let text5 = "     Hello    World!    ";
+            let text6 = text3.trimEnd();
+            document.getElementById("demo3").innerHTML = "Length text5 = " + text5.length + " <br> Length text6 = " + text6.length;
+        </script>
+
+        <p>NOTE :  <br>
+            All string methods return a new string. They don't modify the original string  <br>
+            Formally said: <br>
+            Strings are immutable: Strings cannot be changed, only replaced.
+        </p>
+       
+    </body>
+</html>

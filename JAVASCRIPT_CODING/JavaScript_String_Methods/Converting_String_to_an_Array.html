@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JavaScript String Methods</title>
+    </head>
+    <body>
+        <h1>Converting a String to an Array</h1>
+        <p>If you want to work with a string as an array, you can convert it to an array.</p>
+
+        <h2>JavaScript String split()</h2>
+        <p>A string can be converted to an array with the  <span style="color: red;background-color: aliceblue;">split() </span>method:</p>
+        <p>Display the first array element, after a string split:</p>
+        
+        <p id="demo"></p>
+        <script>
+            let text = "a,b,c,d,e,f";
+            const myArray = text.split(",");
+            document.getElementById("demo").innerHTML = myArray[5];
+        </script>
+
+        <p>If the separator is omitted, the returned array will contain the whole string in index [0].</p>
+        <p>If the separator is "", the returned array will be an array of single characters:</p>
+
+        <p id="demo1"></p>
+        <script>
+            let text1 = "Hello";
+            const myArr = text1.split("");
+
+            text1 = "";
+            for (let i = 0; i < myArr.length; i++) {
+                 text1 += myArr[i] + "<br>"
+            }
+
+            document.getElementById("demo1").innerHTML = text1;
+        </script>
+    </body>
+</html>
