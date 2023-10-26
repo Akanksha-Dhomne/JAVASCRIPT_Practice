@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Calculate 10! (Factorial of 10).</title>
+    </head>
+    <body>
+        <h1>Calculate 10! (Factorial of 10).</h1>
+        <script>
+            function Factorial(n){
+                let i,fact=1;
+                for(i=1; i<=n; i++){
+                    fact=fact*i;
+                }
+                return fact;
+            }
+            const result = Factorial(10);
+            console.log(result);
+        </script>
+    </body>
+</html>
