@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JavaScript Math Object</title>
+    </head>
+    <body>
+        <h1>JavaScript Math Object</h1>
+        <p>The JavaScript Math object allows you to perform mathematical tasks on numbers.</p>
+        <p>Math.PI returns the ratio of a circle's circumference to its diameter:</p>
+
+        <p id="demo"></p>
+        <script>
+            document.getElementById("demo").innerHTML = Math.PI;
+        </script>
+
+        <hr>
+
+        <h2>The Math Object</h2>
+        <p>Unlike other objects, the Math object has no constructor.</p>
+        <p>The Math object is static.</p>
+        <p>All methods and properties can be used without creating a Math object first.</p>
+
+        <h2>Math Properties (Constants)</h2>
+        <p>The syntax for any Math property is : <span style="color: red;background-color: aliceblue;">Math.property</span>.</p>
+        <p>JavaScript provides 8 mathematical constants that can be accessed as Math properties:</p>
+
+        <p id="demo2"></p>
+        <script>
+            document.getElementById("demo2").innerHTML = 
+            "<p><b>Math.E: </b>" + Math.E + "</p>" + "<p><b>Math.PI: </b>" + Math.PI + "</p>" 
+            + "<p><b>Math.SQRT2: </b>" + Math.SQRT2 + "</p>" + "<p><b>Math.SQRT1_2: </b>" + Math.SQRT1_2 
+            +"</p>" + "<p><b>Math.LN2: </b>" + Math.LN2 + "</p>" + "<p><b>Math.LN10: </b>" + Math.LN10 + "</p>" 
+            + "<p><b>Math.LOG2E: </b>" + Math.LOG2E + "</p>" + "<p><b>Math.LOG10E: </b>" + Math.LOG10E + "</p>";
+        </script>
+    </body>
+</html>
