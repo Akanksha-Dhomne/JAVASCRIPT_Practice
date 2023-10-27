@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JavaScript String Search</title>
+    </head>
+    <body>
+        <h1>JavaScript String match()</h1>
+        <p>The <span style="color: red;background-color: aliceblue;">match()</span> method returns an array containing the results of matching a string against a string (or a regular expression).</p>
+        <p>Perform a search for "ain":</p>
+
+        <p id="demo"></p>
+        <p id="demo2"></p>
+        <p id="demo3"></p>
+        <p id="demo4"></p>
+        <script>
+            let text = "The rain in SPAIN stays mainly in the plain";
+            const myArr = text.match("ain");
+            document.getElementById("demo").innerHTML = myArr.length + " " + myArr;
+            
+            let text2 = "I Really love Roses. Roses are of red color.";
+            const Myarr = text2.match(/Roses/);
+            document.getElementById("demo2").innerHTML = Myarr.length + " " + Myarr;
+
+            let text3 = "I Really love Roses. Roses are of red color.";
+            const Myarr2 = text3.match(/Roses/g);
+            document.getElementById("demo3").innerHTML = Myarr2.length + " " + Myarr2;
+
+            let text4 = "I Really love Roses. roses are of red color. Roses is very beautiful flower. ROSES";
+            const Myarr3 = text4.match(/Roses/gi);
+            document.getElementById("demo4").innerHTML = Myarr3.length + " " + Myarr3;
+        </script>
+
+       <p>NOTE : If a regular expression does not include the g modifier (global search), match() will return only the first match in the string.</p>
+       
+    </body>
+</html>

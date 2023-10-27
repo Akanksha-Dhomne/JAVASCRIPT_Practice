@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JavaScript String Search</title>
+    </head>
+    <body>
+        <h1>JavaScript String endsWith()</h1>
+        <p>The <span style="color: red;background-color: aliceblue;">endsWith()</span> method returns the <b>true</b> if a string ends with a specified value.</p>
+        <p>Otherwise it returns <b>false</b>:</p>
+
+        <p id="demo"></p>
+        <p id="demo2"></p>
+        <p id="demo3"></p>
+        <p id="demo4"></p>
+    
+        <script>
+            let text = "Please locate where 'locate' occurs!";
+            document.getElementById("demo").innerHTML = text.endsWith("occurs!");
+            
+            let text2 = "I Really love Roses. Roses are of red color.";
+            document.getElementById("demo2").innerHTML = text2.endsWith("red",37);
+
+            let text3 = "I Really love Roses. Roses are of red color.";
+            document.getElementById("demo3").innerHTML = text3.endsWith("red",36);
+
+            let text4 = "Please locate where 'locate' occurs!";
+            document.getElementById("demo4").innerHTML =  text4.endsWith("locate");
+        </script>
+
+        <h3>Notes : endsWith() is case sensitive.</h3>
+
+    </body>
+</html>

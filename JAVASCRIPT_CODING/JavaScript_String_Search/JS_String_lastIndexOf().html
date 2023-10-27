@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JavaScript String Search</title>
+    </head>
+    <body>
+        <h1>JavaScript String lastIndexOf()</h1>
+        <p>The <span style="color: red;background-color: aliceblue;">lastIndexOf()</span> method returns the <b>index</b> of the <b>last</b> occurrence of a string in a string:</p>
+        <p>The position of the last occurrence of "locate" is:</p>
+
+        <p id="demo"></p>
+        <p id="demo2"></p>
+        <p id="demo3"></p>
+        <p id="demo4"></p>
+        <script>
+            let text = "Please locate where 'locate' occurs!";
+            let index = text.lastIndexOf("locate");
+            document.getElementById("demo").innerHTML = index;
+            
+            let text2 = "I Really love Roses. Roses are of red color.";
+            let index2 = text2.lastIndexOf("Roses");
+            document.getElementById("demo2").innerHTML = index2;
+
+            let text3 = "I Really love Roses. Roses are of red color.";
+            let index3 = text3.lastIndexOf("ses");
+            document.getElementById("demo3").innerHTML = index3;
+
+            let text4 = "Please locate where 'locate' occurs!";
+            let index4 = text4.lastIndexOf("ate");
+            document.getElementById("demo4").innerHTML = index4;
+
+        </script>
+
+        <p>Both <span style="color: red;background-color: aliceblue;">indexOf() </span>, and <span style="color: red;background-color: aliceblue;">lastIndexOf() </span>return -1 if the text is not found:</p>
+
+        <p id="demo5"></p>
+        <script>
+            let text5 = "Please locate where 'locate' occurs!";
+            let index5 = text5.lastIndexOf("john");
+            document.getElementById("demo5").innerHTML = index5;
+        </script>
+
+        <p>Both methods accept a second parameter as the starting position for the search:</p>
+
+        <p id="demo6"></p>
+        <script>
+            let text6 = "Please locate where 'locate' occurs!";
+            let index6 = text6.indexOf("locate",18);
+            document.getElementById("demo6").innerHTML = index6;
+        </script>
+
+        <p>The <span style="color: red;background-color: aliceblue;">lastIndexOf() </span>methods searches backwards (from the end to the beginning), meaning: if the second parameter is 15, the search starts at position 15, and searches to the beginning of the string.</p>
+        <p>Remember that the lastIndexOf() method searches backwards, so position 15 means start the search at position 15, and search to the beginning.</p>
+
+        <p id="demo7"></p>
+        <script>
+            let text7 = "Please locate where 'locate' occurs!";
+            let index7 = text7.lastIndexOf("locate",18);
+            document.getElementById("demo7").innerHTML = index7;
+        </script>
+
+    </body>
+</html>

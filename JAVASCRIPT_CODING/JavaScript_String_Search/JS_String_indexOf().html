@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JavaScript String Search</title>
+    </head>
+    <body>
+        <h1>JavaScript String indexOf()</h1>
+        <p>The <span style="color: red;background-color: aliceblue;">indexOf()</span> method returns the <b>index</b> (position) the <b>first</b> occurrence of a string in a string:</p>
+        <p>The position of the first occurrence of "locate" is:</p>
+
+        <p id="demo"></p>
+        <p id="demo2"></p>
+        <p id="demo3"></p>
+        <p id="demo4"></p>
+        <script>
+            let text = "Please locate where 'locate' occurs!";
+            let index = text.indexOf("locate");
+            document.getElementById("demo").innerHTML = index;
+            
+            let text2 = "I Really love Roses. Roses are of red color.";
+            let index2 = text2.indexOf("Roses");
+            document.getElementById("demo2").innerHTML = index2;
+
+            let text3 = "I Really love Roses. Roses are of red color.";
+            let index3 = text3.indexOf("ses");
+            document.getElementById("demo3").innerHTML = index3;
+
+            let text4 = "Please locate where 'locate' occurs!";
+            let index4 = text4.indexOf("ate");
+            document.getElementById("demo4").innerHTML = index4;
+        </script>
+
+        <h3>NOTE : JavaScript counts positions from zero. 0 is the first position in a string, 1 is the second, 2 is the third, ..</h3>
+    </body>
+</html>

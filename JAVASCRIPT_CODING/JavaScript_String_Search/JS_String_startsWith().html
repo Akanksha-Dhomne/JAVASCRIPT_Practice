@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JavaScript String Search</title>
+    </head>
+    <body>
+        <h1>JavaScript String startsWith()</h1>
+        <p>The <span style="color: red;background-color: aliceblue;">startsWith()</span> method returns the <b>true</b> if a string begins with a specified value.</p>
+        <p>Otherwise it returns <b>false</b>:</p>
+
+        <p id="demo"></p>
+        <p id="demo2"></p>
+        <p id="demo3"></p>
+        <p id="demo4"></p>
+        <p id="demo5"></p>
+        <p id="demo6"></p>
+        <script>
+            let text = "Please locate where 'locate' occurs!";
+            document.getElementById("demo").innerHTML = text.startsWith("Please");
+            
+            let text2 = "I Really love Roses. Roses are of red color.";
+            document.getElementById("demo2").innerHTML = text2.startsWith("Hello");
+
+            let text3 = "I Really love Roses. Roses are of red color.";
+            document.getElementById("demo3").innerHTML = text3.startsWith("I");
+
+            let text4 = "Please locate where 'locate' occurs!";
+            document.getElementById("demo4").innerHTML =  text4.startsWith("locate");
+        
+            let text5 = "I Really love Roses. Roses are of red color.";
+            document.getElementById("demo5").innerHTML = text5.startsWith("love",9);
+
+            let text6 = "I Really love Roses. Roses are of red color.";
+            document.getElementById("demo6").innerHTML = text6.startsWith("love",6);
+        </script>
+
+        <h3>Notes : startsWith() is case sensitive.</h3>
+
+    </body>
+</html>
