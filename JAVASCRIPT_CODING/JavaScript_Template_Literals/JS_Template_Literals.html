@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JavaScript Template Literals</title>
+    </head>
+    <body>
+        <h1>JavaScript Template Literals</h1>
+        <ul>
+            <li>Template Literals</li>
+            <li>Template Strings</li>
+            <li>String Templates</li>
+            <li>Back-Tics Syntax</li>
+        </ul>
+
+        <h2>Back-Tics Syntax</h2>
+        <p><b>Template Literals</b> use back-ticks (``) rather than the quotes ("") to define a string:</p>
+
+        <p id="demo"></p>
+        <script>
+            let text = `Hello World`;
+            document.getElementById("demo").innerHTML = text;
+        </script>
+
+        <hr>
+
+        <h2>Quotes Inside Strings</h2>
+        <p>With <b>template literals</b> , you can use both single and double quotes inside a string:</p>
+
+        <p id="demo2"></p>
+        <script>
+            let text2 = `He's often called "Johnny"`;
+            document.getElementById("demo2").innerHTML = text2;
+        </script>
+
+        <hr>
+
+        <h2>Multiline Strings</h2>
+        <p><b>template literals</b> allows multiline strings:</p>
+
+        <p id="demo3"></p>
+        <script>
+            let text3 = `The quick
+                        brown fox
+                        jumps over
+                        the lazy dog`;
+            
+            document.getElementById("demo3").innerHTML = text3;
+        </script>
+
+        <hr>
+
+        <p id="demo4"></p>
+        <script>
+            let text4 = "The quick" + 
+                        "brown fox" +
+                        "jumps over" +
+                        "the lazy dog";
+            
+            document.getElementById("demo4").innerHTML = text4;
+        </script>
+
+        <hr>
+
+        <h2>Interpolation</h2>
+        <p><b>template literals</b> provide an easy way to interpolate variables and expressions into strings.</p>
+        <p>The method is called string interpolation.</p>
+        <p>The syntax is:</p>
+        <p>${...}</p>
+
+        <h2>Variable Substitutions</h2>
+        <p><b>template literals</b> allow variables in strings:</p>
+
+        <p id="demo5"></p>
+        <script>
+            let firstName = "John";
+            let lastName = "Doe";
+            let text5 = `Welcome ${firstName}, ${lastName}!`;
+            document.getElementById("demo5").innerHTML = text5;
+        </script>
+
+        <p id="demo6"></p>
+        <script>
+            let firstName1 = "how are you?";
+            let lastName1 = "Nice to meet you!";
+            let text6 = `Welcome ${firstName1}, ${lastName1}!`;
+            document.getElementById("demo6").innerHTML = text6;
+        </script>
+
+        <p>Automatic replacing of expressions with real values is called <b>string interpolation</b>.</p>
+
+        <p id="demo7"></p>
+        <script>
+            let firstName2 = "how are you?";
+            let lastName2 = "Nice to meet you!";
+            let text7 = `Welcome ${8+6}, ${lastName2}!`;
+            document.getElementById("demo6").innerHTML = text7;
+        </script>
+
+        <hr>
+
+        <h2>Expression Substitution</h2>
+        <p><b>template literals</b> allow expressions in strings:</p>
+
+        <p id="demo8"></p>
+        <script>
+            let price = 10;
+            let VAT = 0.25;
+            let total = `Total : ${(price * (1 + VAT)).toFixed(2)}`;
+            document.getElementById("demo8").innerHTML = total;
+        </script>
+
+        <p id="demo9"></p>
+        <script>
+            let price1 = 86;
+            let VAT1 = 0.25;
+            let total1 = `Total : ${(price1 * (1 + VAT)).toFixed(2)}`;
+            document.getElementById("demo9").innerHTML = total1;
+        </script>
+
+        <p>Automatic replacing of expressions with real values is called <b>string interpolation</b>.</p>
+
+        <h2>HTML Templates</h2>
+
+        <p id="demo10"></p>
+        <script>
+            let header = "Template Literals"
+            let tags = ["template literals", "javascript", "es6"];
+
+            let html = `<h2>${header}</h2><ul>`;
+            
+            for (const x of tags) {
+                html +=`<li>${x}</li>`;
+            }
+            
+            html+= `</ul>`;
+            document.getElementById("demo10").innerHTML = html;    
+        </script>
+        
+    </body>
+</html>
