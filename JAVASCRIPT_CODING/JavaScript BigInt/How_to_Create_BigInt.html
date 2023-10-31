@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JavaScript BigInt</title>
+    </head>
+    <body>
+        <h1>How to Create a BigInt</h1>
+        <p>To create a <span style="color: red;background-color: aliceblue;">BigInt</span>, append n to the end of an integer or call <span style="color: red;background-color: aliceblue;">BigInt()</span>:</p>
+        <h2>Integer and BigInt</h2>
+
+        <p id="demo"></p>
+        <script>
+            let x = 99999999999999999;
+            let y = BigInt("99999999999999999");
+            document.getElementById("demo").innerHTML = x + "<br>" + y;
+        </script>
+
+        <hr>
+
+        <p id="demo2"></p>
+        <script>
+            let a = 123455666686970077766545432231357600n;
+            let b = BigInt("123455666686970077766545432231357600");
+            document.getElementById("demo2").innerHTML = a + "<br>" + b;
+        </script>
+    </body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JavaScript BigInt</title>
+    </head>
+    <body>
+        <h1>New Number Methods</h1>
+        <p>ES6 also added 2 new methods to the Number object:</p>
+        <ul>
+            <li><b>Number.isInteger()</b></li>
+            <li><b>Number.isSafeInteger()</b></li>
+        </ul>
+
+        <h2>The Number.isInteger() Method</h2>
+        <p>The <span style="color: red;background-color: aliceblue;">Number.isInteger() </span>method returns <span style="color: red;background-color: aliceblue;">true </span>if the argument is an integer.</p>
+
+        <p id="demo"></p>
+        <script>
+            document.getElementById("demo").innerHTML = Number.isInteger(20) + "<br>" + Number.isInteger(20.5);
+        </script>
+
+        <hr>
+
+        <h2>The Number.isSafeInteger() Method</h2>
+        <p>A safe integer is an integer that can be exactly represented as a double precision number.</p>
+        <p>The <span style="color: red;background-color: aliceblue;">Number.isSafeInteger() </span>method returns <span style="color: red;background-color: aliceblue;">true </span>if the argument is a safe integer.</p>
+
+
+        <p id="demo1"></p>
+        <script>
+              document.getElementById("demo1").innerHTML = Number.isSafeInteger(20) + "<br>" + Number.isSafeInteger(206687099099876544323456680);
+        </script>
+
+        <p>Safe integers are all integers from -(253 - 1) to +(253 - 1). <br>
+            This is safe: 9007199254740991. This is not safe: 9007199254740992.</p>
+    </body>
+</html>

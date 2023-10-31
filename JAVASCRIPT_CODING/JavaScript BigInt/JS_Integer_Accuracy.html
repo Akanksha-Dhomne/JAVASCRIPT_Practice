@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JavaScript BigInt</title>
+    </head>
+    <body>
+        <h1>JavaScript BigInt</h1>
+        <p>JavaScript <span style="color: red;background-color: aliceblue;">BigInt</span> variables are used to store big integer values that are too big to be represented by a normal JavaScript <span style="color: red;background-color: aliceblue;">Number</span>.</p>
+    
+        <h2>JavaScript Integer Accuracy</h2>
+        <p>JavaScript integers are only accurate up to 15 digits:</p>
+
+        <p id="demo"></p>
+        <script>
+            let x = 999999999999999;
+            let y = 99999999999999999;
+            document.getElementById("demo").innerHTML = x + "<br>" + y;
+        </script>
+
+        <p>In JavaScript, all numbers are stored in a 64-bit floating-point format (IEEE 754 standard).</p>
+        <p>With this standard, large integer cannot be exactly represented and will be rounded.</p>
+        <p>Because of this, JavaScript can only safely represent integers:</p>
+        <p>Up to 9007199254740991 +(253-1)</p>
+        <p>and</p>
+        <p>Down to -9007199254740991 -(253-1).</p>
+        <p>Integer values outside this range lose precision.</p>
+        
+    </body>
+</html>

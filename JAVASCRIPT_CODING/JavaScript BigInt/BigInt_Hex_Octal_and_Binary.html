@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JavaScript BigInt</title>
+    </head>
+    <body>
+        <h1>BigInt Hex, Octal and Binary</h1>
+        <p><span style="color: red;background-color: aliceblue;">BigInt </span>can also be written in hexadecimal, octal, or binary notation:</p>
+        <h2>Hex, Octal and Binary</h2>
+
+        <p id="demo"></p>
+        <script>
+            let hex = 0x4000000000000000000005n;
+            let oct = 0o4000000000000000000000003n;
+            let bin = 0b100000000000000000000000000000000000000000000000011n;
+            document.getElementById("demo").innerHTML = hex + "<br>" + oct + "<br>" + bin;
+        </script>
+    </body>
+</html>

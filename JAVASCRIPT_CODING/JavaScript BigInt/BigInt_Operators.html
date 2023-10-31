@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JavaScript BigInt</title>
+    </head>
+    <body>
+        <h1>BigInt Operators</h1>
+        <p>Operators that can be used on a JavaScript <span style="color: red;background-color: aliceblue;">Number </span> can also be used on a <span style="color: red;background-color: aliceblue;">BigInt</span></p>
+        <h2>BigInt Multiply</h2>
+        <p>Operators that can be used a Number can be used on a BigInt.</p>
+
+        <p id="demo"></p>
+        <script>
+            let x = 7697080987655432334567890n;
+            let y = 4658789087655644332356789n
+            let z = x * y;
+            document.getElementById("demo").innerHTML = z;
+        </script>
+
+        <p>NOTE : Arithmetic between a <span style="color: red;background-color: aliceblue;">BigInt </span>and a <span style="color: red;background-color: aliceblue;">Number</span> is not allowed (type conversion lose information).</p>
+        <p>Unsigned right shift (>>>) can not be done on a <span style="color: red;background-color: aliceblue;">BigInt </span>(it does not have a fixed width).</p>
+
+    
+</html>

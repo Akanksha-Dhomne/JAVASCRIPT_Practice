@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JavaScript BigInt</title>
+    </head>
+    <body>
+        <h1>BigInt Decimals</h1>
+        <p>A <span style="color: red;background-color: aliceblue;">BigInt </span> can not have decimals.</p>
+        <h2>BigInt Divide</h2>
+        <p>Cannot mix BigInt and other types, use explicit conversions.</p>
+       
+        <p id="demo"></p>
+        <script>
+            let x = 7n;
+            let y = Number(x) / 2;
+            document.getElementById("demo").innerHTML = y;
+        </script>
+
+        <hr>
+
+        <p id="demo1"></p>
+        <script>
+            let a = 6n;
+            let b = Number(a) / 2;
+            document.getElementById("demo1").innerHTML = b;
+        </script>
+
+        <hr>
+
+        <h3>Incorrert</h3>
+        <p><span style="color: red;background-color: aliceblue;">let x = 5n;<br>
+            let y = x / 2;<br>
+            // Error: Cannot mix BigInt and other types, use explicit conversion.<br>
+        </span></p>
+
+    </body>
+</html>
