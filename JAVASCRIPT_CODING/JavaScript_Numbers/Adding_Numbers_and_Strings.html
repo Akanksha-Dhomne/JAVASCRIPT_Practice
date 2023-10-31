@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JavaScript Numbers</title>
+    </head>
+    <body>
+        <h2>Adding Numbers and Strings</h2>
+
+        <p style="color: rgb(223, 60, 87);">WARNING !!  <br>
+            JavaScript uses the + operator for both addition and concatenation. <br>
+            Numbers are added. Strings are concatenated.
+        </p>
+
+        <p>If you add two numbers, the result will be a number:</p>
+
+        <p id="demo6"></p>
+        <script>
+            let o = 10;
+            let p = 60;
+            let r = o + p;
+            document.getElementById("demo6").innerHTML = r;
+        </script>
+
+        <p>If you add two strings, the result will be a string concatenation:</p>
+
+        <p id="demo7"></p>
+        <script>
+            let c = "10";
+            let t = "60";
+            let s = c + t;
+            document.getElementById("demo7").innerHTML = s;
+        </script>
+
+        <p>If you add a number and a string, the result will be a string concatenation:</p>
+
+        <p id="demo8"></p>
+        <script>
+            let m = 10;
+            let n = "60";
+            let j = c + t;
+            document.getElementById("demo8").innerHTML = j;
+        </script>
+
+        <p id="demo9"></p>
+        <script>
+            let k = "john";
+            let l = 60;
+            let i = k + l;
+            document.getElementById("demo9").innerHTML = i;
+        </script>
+
+        <hr>
+
+        <p>A common mistake is to expect this result to be 30:</p>
+        <p id="demo10"></p>
+        <script>
+            var z = 10;
+            var d = 20;
+            document.getElementById("demo10").innerHTML ="The result is: " + z + d;
+        </script>
+
+        <hr>
+
+        <p>A common mistake is to expect this result to be 102030:</p>
+        <p id="demo11"></p>
+        <script>
+            let q = 10;
+            let e = 20;
+            let A = "30";
+            let result = q + e + A;
+            document.getElementById("demo11").innerHTML = result;
+        </script>
+
+        <p>The JavaScript interpreter works from left to right.</p>
+        <p>First 10 + 20 is added because x and y are both numbers.</p>
+        <p>Then 30 + "30" is concatenated because z is a string.</p>
+    </body>
+</html>

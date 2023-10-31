@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JavaScript Numbers</title>
+    </head>
+    <body>
+        <h2>Numeric Strings</h2>
+        <p>JavaScript strings can have numeric content:</p>
+
+        <p>let x = 100;         // x is a number  <br>
+           let y = "100";       // y is a string
+        </p>
+
+        <p>JavaScript will try to convert strings to numbers in all numeric operations:</p>
+
+        <p>JavaScript will try to convert strings to numbers when dividing:</p>
+        <p id="demo"></p>
+
+        <script>
+            let x = "100";
+            let y = "10";
+            let z = x / y;   
+            document.getElementById("demo").innerHTML = z;
+        </script>
+
+        <hr>
+
+        <p>JavaScript will try to convert strings to numbers when multiplying:</p>
+        <p id="demo2"></p>
+
+        <script>
+            let a = "100";
+            let b = "10";
+            let c = a * b;   
+            document.getElementById("demo2").innerHTML = c;
+        </script>
+
+        <hr>
+        
+        <p>JavaScript will try to convert strings to numbers when subtracting:</p>
+        <p id="demo3"></p>
+
+        <script>
+            let q = "100";
+            let w = "10";
+            let e = q - w;   
+            document.getElementById("demo3").innerHTML = e;
+        </script>
+
+        <hr>
+
+        <p>JavaScript will NOT convert strings to numbers when adding:</p>
+        <p id="demo4"></p>
+
+        <script>
+            let r = "100";
+            let t = "10";
+            let u = r + t;   
+            document.getElementById("demo4").innerHTML = u;
+        </script>
+
+        <p>In the last example JavaScript uses the + operator to concatenate the strings.</p>
+        
+    </body>
+</html>

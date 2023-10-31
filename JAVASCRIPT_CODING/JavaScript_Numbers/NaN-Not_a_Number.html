@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JavaScript Numbers</title>
+    </head>
+    <body>
+        <h1>NaN - Not a Number</h1>
+        <p><span style="color: red;background-color: aliceblue;">NaN </span>is a JavaScript reserved word indicating that a number is not a legal number.</p>
+        <p>Trying to do arithmetic with a non-numeric string will result in <span style="color: red;background-color: aliceblue;">NaN</span> (Not a Number):</p>
+        <p>A number divided by a non-numeric string becomes NaN (Not a Number):</p>
+
+        <p id="demo"></p>
+        <script>
+            document.getElementById("demo").innerHTML = 100 / "Banana";
+        </script>
+
+        <hr>
+
+        <p>However, if the string is numeric, the result will be a number:</p>
+        <p>A number divided by a numeric string becomes a number:</p>
+
+        <p id="demo2"></p>
+        <script>
+            document.getElementById("demo2").innerHTML = 100 / "10";
+        </script>
+
+        <hr>
+
+        <p>You can use the global JavaScript function <span style="color: red;background-color: aliceblue;">isNaN() </span>to find out if a value is a not a number:</p>
+
+        <p id="demo3"></p>
+        <script>
+            let x = 100 / "Banana";
+            document.getElementById("demo3").innerHTML = isNaN(x);
+        </script>
+
+        <hr>
+
+        <p>Watch out for <span style="color: red;background-color: aliceblue;">NaN</span>. If you see <span style="color: red;background-color: aliceblue;">NaN </span>in a mathematical operation, the result will also be <span style="color: red;background-color: aliceblue;">NaN</span>:</p>
+    
+        <p id="demo4"></p>
+        <script>
+            let z = NaN;
+            let y = 5;
+            document.getElementById("demo4").innerHTML = z + y;
+        </script>
+
+        <hr>
+
+        <p>Or the result might be a concatenation like NaN5:</p>
+
+        <p id="demo5"></p>
+        <script>
+            let a = NaN;
+            let b = "8";
+            let c = "6";
+            let d = a + b + c;
+            document.getElementById("demo5").innerHTML = d;
+        </script>
+
+        <hr>
+
+        <p><span style="color: red;background-color: aliceblue;">NaN</span> is a number: <span style="color: red;background-color: aliceblue;">typeof NaN</span> return <span style="color: red;background-color: aliceblue;">number</span>:</p>
+
+        <p id="demo6"></p>
+        <script>
+            let g = NaN;
+            document.getElementById("demo6").innerHTML = typeof g;
+        </script>
+    </body>
+</html>

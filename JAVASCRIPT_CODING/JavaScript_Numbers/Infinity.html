@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JavaScript Numbers</title>
+    </head>
+    <body>
+        <h1>Infinity</h1>
+        <p><span style="color: red;background-color: aliceblue;">Infinity </span> (or <span style="color: red;background-color: aliceblue;">-Infinity)</span>  is the value JavaScript will return if you calculate a number outside the largest possible number.</p>
+        <p>Infinity is returned if you calculate a number outside the largest possible number:</p>
+
+        <p id="demo"></p>
+        <script>
+            let myNumber = 2;
+            let text = "";
+            while (myNumber != Infinity) {
+                myNumber = myNumber * myNumber;
+                text = text + myNumber + "<br>";
+            }
+            document.getElementById("demo").innerHTML = text;
+        </script>
+
+        <hr>
+
+        <p>Division by 0 (zero) also generates <span style="color: red;background-color: aliceblue;">Infinity</span>:</p>
+
+        <p id="demo2"></p>
+        <script>
+            let i = 2/0;
+            let j = -2/0;
+            document.getElementById("demo2").innerHTML = i + "<br>" + j;
+        </script>
+
+        <hr>
+
+        <p><span style="color: red;background-color: aliceblue;">Infinity </span>is a number: <span style="color: red;background-color: aliceblue;">typeof Infinity</span> return <span style="color: red;background-color: aliceblue;">Number</span>.</p>
+
+        <p id="demo3"></p>
+        <script>
+            document.getElementById("demo3").innerHTML = typeof Infinity;
+        </script>
+    </body>
+</html>
