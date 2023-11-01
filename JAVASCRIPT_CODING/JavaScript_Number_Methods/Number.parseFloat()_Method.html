@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JavaScript Number Methods</title>
+    </head>
+    <body>
+        <h1>The Number.parseFloat() Method</h1>
+        <p>The <span style="color: red;background-color: aliceblue;">Number.parseFloat() </span>parses a string and returns a number.</p>
+        <p>Spaces are allowed. Only the first number is returned:</p>
+
+        <p id="demo"></p>
+        <script>
+            document.getElementById("demo").innerHTML = 
+            Number.parseFloat("-10") + "<br>" + 
+            Number.parseFloat("-10.55") + "<br>" + 
+            Number.parseFloat("10") + "<br>" + 
+            Number.parseFloat("10 20 30 40") + "<br>" + 
+            Number.parseFloat("10 7") + "<br>" + 
+            Number.parseFloat("10 years") + "<br>" + 
+            Number.parseFloat("years 10");
+        </script>
+
+        <p>If the number cannot be converted, NaN (Not a Number) is returned.</p>
+
+        <h3>NOTE : <br>
+            The Number methods Number.parseInt() and Number.parseFloat() are the same as the Global methods parseInt() and parseFloat().<br>
+            The purpose is modularization of globals (to make it easier to use the same JavaScript code outside the browser).
+        </h3>
+    </body>
+</html>

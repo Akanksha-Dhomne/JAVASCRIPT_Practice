@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JavaScript Number Methods</title>
+    </head>
+    <body>
+        <h1>The Number() Method</h1>
+        <p>The <span style="color: red;background-color: aliceblue;">Number() </span>method can be used to convert JavaScript variables to numbers:</p>
+        <p>The Number() method converts variables to numbers:</p>
+
+        <p id="demo"></p>
+        <script>
+            let x = 86.02;
+            document.getElementById("demo").innerHTML = 
+            Number(true) + "<br>" + 
+            Number(false) + "<br>" + 
+            Number("10") + "<br>" + 
+            Number(" 10") + "<br>" + 
+            Number("10 ") + "<br>" + 
+            Number(" 10 ") + "<br>" + 
+            Number("10.44") + "<br>" + 
+            Number("10,44") + "<br>" +
+            Number("10 44") + "<br>" +
+            Number("John");
+        </script>
+
+        <p>If the number cannot be converted, NaN (Not a Number) is returned.</p>
+    </body>
+</html>

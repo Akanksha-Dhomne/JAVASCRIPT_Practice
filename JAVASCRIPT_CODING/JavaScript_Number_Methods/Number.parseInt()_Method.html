@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JavaScript Number Methods</title>
+    </head>
+    <body>
+        <h1>The Number.parseInt() Method</h1>
+        <p>The <span style="color: red;background-color: aliceblue;">Number.parseInt() </span>parses a string and returns a Whole number.</p>
+        <p>Spaces are allowed. Only the first number is returned:</p>
+
+        <p id="demo"></p>
+        <script>
+            document.getElementById("demo").innerHTML = 
+            Number.parseInt("-10") + "<br>" + 
+            Number.parseInt("-10.55") + "<br>" + 
+            Number.parseInt("10") + "<br>" + 
+            Number.parseInt("10 20 30 40") + "<br>" + 
+            Number.parseInt("10 7") + "<br>" + 
+            Number.parseInt("10 years") + "<br>" + 
+            Number.parseInt("years 10");
+        </script>
+
+        <p>If the number cannot be converted, NaN (Not a Number) is returned.</p>
+    </body>
+</html>

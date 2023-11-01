@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JavaScript Number Methods</title>
+    </head>
+    <body>
+        <h1>The toExponential() Method</h1>
+        <p>The <span style="color: red;background-color: aliceblue;">toExponential() </span>returns a string, with a number rounded and written using exponential notation.</p>
+        <p>A parameter defines the number of characters behind the decimal point:</p>
+
+        <p id="demo"></p>
+        <script>
+            let x = 86.02;
+            document.getElementById("demo").innerHTML = x.toExponential() + "<br>" + x.toExponential(2) + "<br>" + x.toExponential(4) + "<br>" + x.toExponential(6);
+        </script>
+
+        <hr>
+
+        <p id="demo2"></p>
+        <script>
+            let y = 3.456;
+            document.getElementById("demo2").innerHTML = y.toExponential() + "<br>" + y.toExponential(2) + "<br>" + y.toExponential(4) + "<br>" + y.toExponential(6);
+        </script>
+
+        <hr>
+
+        <p id="demo3"></p>
+        <script>
+            let z = 345.76;
+            document.getElementById("demo3").innerHTML = z.toExponential() + "<br>" + z.toExponential(2) + "<br>" + z.toExponential(4) + "<br>" + z.toExponential(6);
+        </script>
+
+        <p>The parameter is optional. If you don't specify it, JavaScript will not round the number.</p>
+    </body>
+</html>

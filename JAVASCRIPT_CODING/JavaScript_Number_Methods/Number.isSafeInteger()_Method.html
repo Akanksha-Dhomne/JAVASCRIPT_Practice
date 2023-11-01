@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JavaScript Number Methods</title>
+    </head>
+    <body>
+        <h1>The Number.isSafeInteger() Method</h1>
+        <p>A safe integer is an integer that can be exactly represented as a double precision number.</p>
+        <p>The <span style="color: red;background-color: aliceblue;">Number.isSafeInteger() </span>method returns true if the argument is a safe integer.</p>
+        <p>Otherwise it returns false.</p>
+
+        <p id="demo"></p>
+        <script>
+            document.getElementById("demo").innerHTML = 
+            Number.isSafeInteger(10) + "<br>" + 
+            Number.isSafeInteger(10.6) + "<br>" + 
+            Number.isSafeInteger(63784) + "<br>" + 
+            Number.isSafeInteger(6377326774883934884) + "<br>" + 
+            Number.isSafeInteger(100);
+        </script>
+
+        <p>Safe integers are all integers from -(253 - 1) to +(253 - 1). <br>
+            This is safe: 9007199254740991. This is not safe: 9007199254740992.
+        </p>
+    </body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JavaScript Number Methods</title>
+    </head>
+    <body>
+        <h1>The valueOf() Method</h1>
+        <p>The <span style="color: red;background-color: aliceblue;">valueOf() </span>returns a number as a number.</p>
+        <p>A parameter defines the number of characters behind the decimal point:</p>
+
+        <p id="demo"></p>
+        <script>
+            let x = 862;
+            document.getElementById("demo").innerHTML = x.valueOf() + "<br>" + (862).valueOf() + "<br>" + (800 + 62).valueOf();
+        </script>
+
+        <hr>
+
+        <p id="demo2"></p>
+        <script>
+            let y = 344;
+            document.getElementById("demo2").innerHTML = y.valueOf() + "<br>" + (344).valueOf() + "<br>" + (300 + 44).valueOf();
+        </script>
+
+        <hr>
+
+        <p>In JavaScript, a number can be a primitive value (typeof = number) or an object (typeof = object).</p>
+        <p>The <span style="color: red;background-color: aliceblue;">valueOf() </span>method is used internally in JavaScript to convert Number objects to primitive values.</p>
+        <p>There is no reason to use it in your code.</p>
+        <p>All JavaScript data types have a <span style="color: red;background-color: aliceblue;">valueOf() </span>and a <span style="color: red;background-color: aliceblue;">toString()</span> method.</p>
+        
+    </body>
+</html>

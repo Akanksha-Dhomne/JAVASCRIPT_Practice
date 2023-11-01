@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JavaScript Number Methods</title>
+    </head>
+    <body>
+        <h1>The toString() Method</h1>
+        <p>The <span style="color: red;background-color: aliceblue;">toString() </span>method returns a number as a string.</p>
+        <p>All number methods can be used on any type of numbers (literals, variables, or expressions):</p>
+        <p>The toString() method converts a number to a string.</p>
+
+        <p id="demo"></p>
+        <script>
+            let x = 862;
+            document.getElementById("demo").innerHTML = x.toString() + "<br>" + (862).toString() + "<br>" + (800 + 62).toString();
+            console.log(typeof x.toString());
+        </script>
+
+        <hr>
+
+        <p id="demo2"></p>
+        <script>
+            let y = 345;
+            document.getElementById("demo2").innerHTML = y.toString() + "<br>" + (345).toString() + "<br>" + (300 + 45).toString();
+        </script>
+    </body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JavaScript Number Methods</title>
+    </head>
+    <body>
+        <h1>The parseFloat() Method</h1>
+        <p>The <span style="color: red;background-color: aliceblue;">parseFloat() </span>parses a string and returns a number. Spaces are allowed. Only the first number is returned:</p>
+        <p>The parseFloat() method converts strings to numbers:</p>
+
+        <p id="demo"></p>
+        <script>
+            document.getElementById("demo").innerHTML = 
+            parseFloat("-10") + "<br>" + 
+            parseFloat("-10.55") + "<br>" + 
+            parseFloat("10") + "<br>" + 
+            parseFloat("10 7") + "<br>" + 
+            parseFloat("10 years") + "<br>" + 
+            parseFloat("years 10");
+        </script>
+
+        <hr>
+
+        <p id="demo2"></p>
+        <script>
+            document.getElementById("demo2").innerHTML = 
+            parseFloat("-5766") + "<br>" + 
+            parseFloat("-1068.55") + "<br>" + 
+            parseFloat("1079878") + "<br>" + 
+            parseFloat("1076 7789") + "<br>" + 
+            parseFloat("1087 years") + "<br>" + 
+            parseFloat("years 1090887");
+        </script>
+
+        <p>If the number cannot be converted, NaN (Not a Number) is returned.</p>
+    </body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JavaScript Number Methods</title>
+    </head>
+    <body>
+        <h1>The Number.isInteger() Method</h1>
+        <p>The <span style="color: red;background-color: aliceblue;">Number.isInteger() </span>method returns true if the argument is an integer.</p>
+        <p>The Number() method converts variables to numbers:</p>
+
+        <p id="demo"></p>
+        <script>
+            document.getElementById("demo").innerHTML = 
+            Number.isInteger(10) + "<br>" + 
+            Number.isInteger(10.6) + "<br>" + 
+            Number.isInteger(63784) + "<br>" + 
+            Number.isInteger(637.84) + "<br>" + 
+            Number.isInteger(100);
+        </script>
+    </body>
+</html>
