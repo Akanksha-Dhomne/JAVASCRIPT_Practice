@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JavaScript Arrays</title>
+    </head>
+    <body>
+        <h1>Adding Array Elements</h1>
+        <p>The easiest way to add a new element to an array is using the <span style="color: red;background-color: aliceblue;">push() </span>method:</p>
+        <p>The push method appends a new element to an array.</p>
+
+        <button onclick="myFunction()">Try it</button>
+
+        <p id="demo"></p>
+        <script>
+            const flowers = ["Rose", "Lotus", "Lilly", "Sunflower"];
+            document.getElementById("demo").innerHTML = flowers;
+
+            function myFunction() {
+                flowers.push("Daisy");
+                flowers.push("Marigold");
+            document.getElementById("demo").innerHTML = flowers;
+            }
+        </script>
+
+        <hr>
+
+        <button onclick="myProgram()">Try it</button>
+
+        <p id="demo1"></p>
+        <script>
+            const flowers1 = ["Rose", "Lotus", "Lilly", "Sunflower"];
+            document.getElementById("demo1").innerHTML = flowers1;
+
+            function myProgram() {
+                flowers1.push("Lavender");
+                flowers1.push("Mogra");
+            document.getElementById("demo1").innerHTML = flowers1;
+            }
+        </script>
+
+        <hr>
+
+        <p>New element can also be added to an array using the <span style="color: red;background-color: aliceblue;">length </span>property:</p>
+        <p>The length property provides an easy way to append new elements to an array without using the push() method.</p>
+
+        <button onclick="Myfunction()">Try it</button>
+
+        <p id="demo2"></p>
+        <script>
+            const flowers2 = ["Rose", "Lotus", "Lilly", "Sunflower"];
+            document.getElementById("demo2").innerHTML = flowers2;
+
+            function Myfunction(){
+                flowers2[flowers2.length] = "lavender";
+                document.getElementById("demo2").innerHTML = flowers2;
+            }
+        </script>
+
+        <hr>
+        <h3>OR</h3>
+        <hr>
+
+        <p>Same example but my using index no. bcoz flowers3 array has 4 element so index no is 0,1,2,3 but value is 4 .so in place of flowers3.length we can specify 4</p>
+
+        <button onclick="myProgram()">Try it</button>
+
+        <p id="demo3"></p>
+        <script>
+            const flowers3 = ["Rose", "Lotus", "Lilly", "Sunflower"];
+            document.getElementById("demo3").innerHTML = flowers3;
+
+            function myProgram() {
+                flowers3[4] = "Daisy";
+                document.getElementById("demo3").innerHTML = flowers3;
+            }
+        </script>
+
+        <h3 style="background-color: pink;">WARNING ! <br>
+            Adding elements with high indexes can create undefined "holes" in an array:
+        </h3>
+
+        <p id="demo4"></p>
+        <script>
+            const flowers4 = ["Rose", "Lotus", "Lilly", "Sunflower"];
+            flowers4[8] = "Daisy";
+
+            let fLen = flowers4.length;
+            let text = "";
+            for (i = 0; i < fLen; i++) {
+                text += flowers4[i] + "<br>";
+            }
+            document.getElementById("demo4").innerHTML = text;
+        </script>
+
+        <hr>
+        <h3>OR</h3>
+        <hr>
+
+        <p>Holes</p>
+        
+        <p id="demo5"></p>
+        <script>
+            const flowers5 = ["Rose", "Lotus", "Lilly", "Sunflower"];
+            flowers5[8] = "Daisy";
+            document.getElementById("demo5").innerHTML = flowers5;
+        </script>
+    </body>
+</html>

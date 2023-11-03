@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JavaScript Arrays</title>
+    </head>
+    <body>
+        <h1>How to Recognize an Array</h1>
+        <p>A common question is: How do I know if a variable is an array?</p>
+        <p>The problem is that the JavaScript operator <span style="color: red;background-color: aliceblue;">typeof </span>returns <span style="color: red;background-color: aliceblue;">"object"</span>:</p>
+        <p>The typeof operator, when used on an array, returns object:</p>
+
+       <p id="demo"></p>
+        <script>
+            const flowers = ["Rose", "Lotus", "Lilly", "Sunflower"];
+            document.getElementById("demo").innerHTML = typeof flowers;
+        </script>
+
+        <p>The typeof operator returns object because a JavaScript array is an object.</p>
+
+        <hr>
+
+        <h2>Solution 1:</h2>
+        <h2>The isArray() Method</h2>
+        <p>To solve this problem ECMAScript 5 (JavaScript 2009) defined a new method <span style="color: red;background-color: aliceblue;">Array.isArray()</span>:</p>
+       
+        <p id="demo1"></p>
+        <script>
+            const flowers1 = ["Rose", "Lotus", "Lilly", "Sunflower"];
+            document.getElementById("demo1").innerHTML = Array.isArray(flowers1);
+        </script>
+
+        <hr>
+
+        <h2>Solution 2:</h2>
+        <h2>The instanceof Operator</h2>
+        <p>The <span style="color: red;background-color: aliceblue;">instanceof </span>operator returns true if an object is created by a given constructor:</p>
+
+        <p id="demo2"></p>
+        <script>
+            const flowers2 = ["Rose", "Lotus", "Lilly", "Sunflower"];
+            document.getElementById("demo2").innerHTML = flowers2 instanceof Array;
+        </script>
+    </body>
+</html>

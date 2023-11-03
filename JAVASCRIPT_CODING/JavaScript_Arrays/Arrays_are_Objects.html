@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JavaScript Arrays</title>
+    </head>
+    <body>
+        <h1>Arrays are Objects</h1>
+        <p>Arrays are a special type of objects. The <span style="color: red;background-color: aliceblue;">typeof </span>operator in JavaScript returns "object" for arrays.</p>
+        <p>But, JavaScript arrays are best described as arrays.</p>
+        <p>Arrays use <b>numbers</b> to access its "elements". In this example, <span style="color: red;background-color: aliceblue;">person[0] </span>returns John:</p>
+        <p>Arrays use numbers to access its elements.</p>
+
+        <h2>Examples of Array:</h2>     
+        <p id="demo"></p>
+        <script>
+            const person = ["John", "Doe", 46];
+            document.getElementById("demo").innerHTML = person[0];
+        </script>
+
+        <hr>
+        
+        <p id="demo1"></p>
+        <script>
+            const person1 = ["John", "Doe", 46];
+            document.getElementById("demo1").innerHTML = person1[1];
+        </script>
+
+        <hr>
+        
+        <p id="demo2"></p>
+        <script>
+            const person2 = ["Twinkle", "Sharma", "0007"];
+            document.getElementById("demo2").innerHTML = person2[2];
+        </script>
+    
+        <hr>
+
+        <h2>Examples of Object:</h2> 
+        <p>Objects use <b>names</b> to access its "members". In this example, <span style="color: red;background-color: aliceblue;">person.firstName </span>returns John:</p>
+
+        <p id="demo3"></p>
+        <script>
+            const person3 = {firstName:"John", lastName:"Doe", age:78}
+            document.getElementById("demo3").innerHTML = person3.firstName;
+        </script>
+
+        <hr>
+
+        <p id="demo4"></p>
+        <script>
+            const person4 = {firstName:"twinkle", lastName:"sharma", age:78}
+            document.getElementById("demo4").innerHTML = person4.firstName;
+        </script>
+
+    </body>
+</html>

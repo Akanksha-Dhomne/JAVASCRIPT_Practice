@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JavaScript Arrays</title>
+    </head>
+    <body>
+        <h1>The length Property</h1>
+        <p>The <span style="color: red;background-color: aliceblue;">length </span> property of an array returns the length of an array (the number of array elements).</p>
+        <p>The length property returns the length of an array:</p>
+
+        <p id="demo"></p>
+        <script>
+            const flowers = ["Rose", "Lotus", "Lilly", "Sunflower"];
+            let size = flowers.length;
+            document.getElementById("demo").innerHTML = size;
+        </script>
+
+        <hr>
+        
+        <p id="demo1"></p>
+        <script>
+            const flowers1 = ["Rose", "Lotus", "Lilly", "Sunflower", "Lavender", "Daisy", "Marigold", "Mogra"];
+            let size1 = flowers1.length;
+            document.getElementById("demo1").innerHTML = size1;
+        </script>
+
+        <hr>
+    
+        <p id="demo2"></p>
+        <script>
+            const flowers2 = ["Rose", "Lotus"];
+            let size3 = flowers2.length
+            document.getElementById("demo2").innerHTML = size3;
+        </script>
+
+<p>The <span style="color: red;background-color: aliceblue;">length </span>  property is always one more than the highest array index.</p>
+    </body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JavaScript Arrays</title>
+    </head>
+    <body>
+        <h1>Changing an Array Element</h1>
+        <p>This statement changes the value of the first element in <span style="color: red;background-color: aliceblue;">flowers</span>:</p>
+       
+        <p style="color: crimson;"><b>flowers[0] = "lavender";</b></p>
+
+        <h2>Bracket Indexing</h2>
+        <p>JavaScript array elements are accessed using numeric indexes (starting from 0).</p>
+
+        <p>Zeroth index Rose was replaced by lavender:</p>
+        <p id="demo"></p>
+        <script>
+            const flowers = ["Rose", "Lotus", "Lilly", "Sunflower"];
+            flowers[0] = "lavender";
+            document.getElementById("demo").innerHTML = flowers;
+        </script>
+
+        <hr>
+        
+        <p>Third index Sunflower was replaced by Daisy:</p>
+        <p id="demo1"></p>
+        <script>
+            const flowers1 = ["Rose", "Lotus", "Lilly", "Sunflower"];
+            flowers1[3] = "Daisy"
+            document.getElementById("demo1").innerHTML = flowers1;
+        </script>
+
+        <hr>
+        
+        <p>Second index lilly was replaced by Marigold:</p>
+        <p id="demo2"></p>
+        <script>
+            const flowers2 = ["Rose", "Lotus", "Lilly", "Sunflower"];
+            flowers2[2] = "Marigold";
+            document.getElementById("demo2").innerHTML = flowers2;
+        </script>
+    </body>
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JavaScript Arrays</title>
+    </head>
+    <body>
+        <h1>The Difference Between Arrays and Objects</h1>
+        <p>In JavaScript, <b>arrays</b> use <b>numbered indexes</b>.</p>
+        <p>In JavaScript, <b>objects</b> use <b>named indexes</b>.</p>
+        <p><b>Arrays are a special kind of objects, with numbered indexes.</b></p>
+
+        <h2>When to Use Arrays. When to use Objects.</h2>
+        <ul>
+            <li>JavaScript does not support associative arrays.</li>
+            <li>You should use <b>objects</b> when you want the element names to be <b>strings (text)</b>.</li>
+            <li>You should use <b>arrays</b> when you want the element names to be <b>numbers</b>.</li>
+        </ul> 
+       
+        <h2>JavaScript new Array()</h2>
+        <p>JavaScript has a built-in array constructor <span style="color: red;background-color: aliceblue;">new Array()</span>.</p>
+        <p>But you can safely use <span style="color: red;background-color: aliceblue;">[]</span> instead.</p>
+        <p>These two different statements both create a new empty array named points:</p>
+    
+        <p>const points = new Array();  <br>
+            const points = [];  <br>
+        </p>
+
+        <p>These two different statements both create a new array containing 6 numbers:</p>
+        <p>Avoid using new Array(). Use [] instead.</p>
+
+        <p id="demo"></p>
+        <script>
+            const points = new Array(86, 56, 36, 1, 4, 34);
+            document.getElementById("demo").innerHTML = points[0];
+        </script>
+
+        <hr>
+
+        <p id="demo1"></p>
+        <script>
+            const points1 = [86, 56, 36, 1, 4, 34];
+            document.getElementById("demo1").innerHTML = points1[0];
+        </script>
+
+        <hr>
+
+        <p>The <span style="color: red;background-color: aliceblue;">new </span>keyword can produce some unexpected results:</p>
+        <p>Create an Array with three elements.</p>
+
+        <p id="demo2"></p>
+        <script>
+            var points2 = new Array (86, 862, 8602);
+            document.getElementById("demo2").innerHTML = points2;
+        </script>
+
+        <hr>
+
+        <p>Create an Array with two elements.</p>
+
+        <p id="demo3"></p>
+        <script>
+            var points3 = new Array (86, 862);
+            document.getElementById("demo3").innerHTML = points3;
+        </script>
+
+        <hr>
+
+        <p>// Create an array with one element ???</p>
+        <p>Avoid using new Array().</p>
+
+        <p id="demo4"></p>
+        <script>
+            var points4 = new Array (86);
+            document.getElementById("demo4").innerHTML = points4;
+        </script>
+        
+        <h3>A Common Error</h3>
+        <p>const points = [40];</p>
+        <p><b>is not the same as:</b></p>
+        <p>const points = new Array(40);</p>
+
+        <hr>
+
+        <p>Create an Array with one element.</p>
+
+        <p id="demo5"></p>
+        <script>
+            var points5 = [86];
+            document.getElementById("demo5").innerHTML = points5;
+        </script>
+
+        <hr>
+
+        <p>Create an array with 40 undefined elements:</p>
+        <p>Avoid using new Array().</p>
+ 
+        <p id="demo6"></p>
+        <script>
+            var points6 = new Array(40);
+            document.getElementById("demo6").innerHTML = points6[0];
+        </script>
+
+    </body>
+</html>

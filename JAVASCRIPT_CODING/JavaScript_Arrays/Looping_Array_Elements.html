@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JavaScript Arrays</title>
+    </head>
+    <body>
+        <h1>Looping Array Elements</h1>
+        <p>One way to loop through an array, is using a <span style="color: red;background-color: aliceblue;">for </span>loop:</p>
+        
+        <p id="demo"></p>
+        <script>
+            const flowers = ["Rose", "Lotus", "Lilly", "Sunflower"];
+            let fLen = flowers.length;
+
+            let text = "<ul>";
+                for (let i = 0; i < fLen; i++) {
+                text += "<li>" + flowers[i] + "</li>"; 
+                }
+                text += "</ul>";
+            document.getElementById("demo").innerHTML = text;
+        </script>
+
+        <hr>
+
+        <h2>The forEach() Method</h2>
+        <p>Call a function for each array element:</p>
+        <p>You can also use the <span style="color: red;background-color: aliceblue;">Array.forEach() </span>function:</p>
+        
+        <p id="demo1"></p>
+        <script>
+            const flowers1 = ["Rose", "Lotus", "Lilly", "Sunflower"];
+
+            let text1 = "<ul>";
+                flowers1.forEach(myFunction);
+                text += "<ul>";
+                
+            document.getElementById("demo1").innerHTML = text1;
+
+            function myFunction(value) {
+                text1 += "<li>" + value + "</li>";
+            }
+        </script>
+
+        <hr>
+
+        <p id="demo2"></p>
+        <script>
+            const flowers2 = ["Rose", "Lotus", "Lilly", "Sunflower"];
+            document.getElementById("demo2").innerHTML = flowers2[2];
+        </script>
+
+        <hr>
+
+        <p id="demo3"></p>
+        <script>
+            const flowers3 = ["Rose", "Lotus", "Lilly", "Sunflower"];
+            document.getElementById("demo3").innerHTML = flowers3[1];
+        </script>
+
+        <p span style="color: red;background-color: aliceblue;">Note: Array indexes start with 0. [0] is the first element. [1] is the second element.</span></p>
+    </body>
+</html>
