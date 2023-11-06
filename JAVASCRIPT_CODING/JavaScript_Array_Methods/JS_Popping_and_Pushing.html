@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JavaScript Array Methods</title>
+    </head>
+    <body>
+        <h1>Popping and Pushing</h1>
+        <p>When you work with arrays, it is easy to remove elements and add new elements.</p>
+        <p>This is what popping and pushing is:</p>
+        <p>Popping items <b>out</b> of an array, or pushing items <b>into</b> an array.</p>
+
+        <h2>JavaScript Array pop()</h2>
+        <p>The <span style="color: red;background-color:aliceblue;">pop()</span> method removes the last element from an array:</p>
+        <p>The pop() method removes the last element from an array.</p>
+
+        <p id="demo"></p>
+        <p id="demo1"></p>
+        <script>
+            const flowers = ["Rose", "Lotus", "Mogra", "Diasy"];
+            document.getElementById("demo").innerHTML = flowers;
+            flowers.pop();
+            document.getElementById("demo1").innerHTML = flowers;
+        </script>
+
+        <hr>
+
+        <p>The <span style="color: red;background-color:aliceblue;">pop()</span> method returns the value that was "popped out":</p>
+        
+        <p id="demo2"></p>
+        <p id="demo3"></p>
+        <script>
+            const flowers1 = ["Rose", "Lotus", "Mogra", "Diasy"];
+            document.getElementById("demo2").innerHTML = flowers1.pop();
+            document.getElementById("demo3").innerHTML = flowers1;
+        </script>
+
+        <hr>
+
+        <p>By Assigning new variable for popping the item.</p>
+
+        <p id="Demo"></p>
+        <p id="Demo1"></p>
+        <script>
+            const Flowers1 = ["Rose", "Lotus", "Mogra", "Diasy"];
+            let popped = Flowers1.pop();
+            let poppedAgain = Flowers1.pop();
+            document.getElementById("Demo").innerHTML = popped + "," + poppedAgain;
+            document.getElementById("Demo1").innerHTML = Flowers1;
+        </script>
+        <hr>
+   
+        <h2>JavaScript Array push()</h2>
+        <p>The <span style="color: red;background-color:aliceblue;">push()</span> method adds a new element to an array (at the end):</p>
+        
+        <p id="demo4"></p>
+        <p id="demo5"></p>
+        <script>
+            const flower2 = ["Rose", "Lotus", "Mogra", "Diasy", "Lavender"];
+            document.getElementById("demo4").innerHTML = flower2;
+            flower2.push("Lilly");
+            document.getElementById("demo5").innerHTML = flower2;
+        </script>
+
+        <hr>
+
+        <p>The <span style="color: red;background-color:aliceblue;">push()</span> method returns the new array length:</p>
+   
+        <p id="demo6"></p>
+        <p id="demo7"></p>
+        <script>
+            const flowers3 = ["Rose", "Lotus", "Mogra", "Diasy", "Lavender"];
+            document.getElementById("demo6").innerHTML = flowers3.push("Marigold","Lilly");
+            document.getElementById("demo7").innerHTML = flowers3;
+        </script>
+    </body>
+</html>

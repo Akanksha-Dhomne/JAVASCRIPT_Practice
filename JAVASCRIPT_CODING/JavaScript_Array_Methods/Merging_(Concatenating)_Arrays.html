@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JavaScript Array Methods</title>
+    </head>
+    <body>
+        <h1>Merging (Concatenating) Arrays</h1>
+        <p>The <span style="color: red;background-color:aliceblue;">concat()</span> method creates a new array by merging (concatenating) existing arrays:</p>
+        <h2>The concat() Method</h2>
+        <p>The concat() method merges (concatenates) arrays:</p>
+
+        <p id="demo"></p>
+        <script>
+            const myGirls = ["Sophia", "Amelia", "Emma" ,"Ella"];
+            const myBoys = ["Oliver", "Henry"];
+            const myChildren = myGirls.concat(myBoys);
+            document.getElementById("demo").innerHTML = myChildren;
+        </script>
+
+        <hr>
+         
+        <p>The <span style="color: red;background-color:aliceblue;">concat()</span> method does not change the existing arrays. It always returns a new array.</p>
+        <p>The <span style="color: red;background-color:aliceblue;">concat()</span> method can take any number of array arguments:</p>
+
+        <h3>Example (Merging Three Arrays)</h3>
+
+        <p id="demo2"></p>
+        <script>
+            const array1 = ["Sophia", "Amelia", "Emma" ,"Ella"];
+            const array2 = ["Oliver", "Henry"];
+            const array3 = ["Noah", "William"];
+            const myChildrens = array1.concat(array2,array3);
+            document.getElementById("demo2").innerHTML = myChildrens;
+        </script>
+
+        <hr>
+   
+        <p>The <span style="color: red;background-color:aliceblue;">concat()</span> method can also take strings as arguments:</p>
+        <h3>Example (Merging an Array with Values)</h3>
+        <p>The concat() method can merge string values to arrays:</p>
+
+        <p id="demo3"></p>
+        <script>
+            const myArray = ["Sophia", "Amelia", "Emma" ,"Ella"];
+            const Mychildren = myArray.concat("peter");
+            document.getElementById("demo3").innerHTML = Mychildren;
+        </script>
+    </body>
+</html>

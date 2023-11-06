@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JavaScript Array Methods</title>
+    </head>
+    <body>
+        <h1>Shifting Elements</h1>
+        <p>Shifting is equivalent to popping, but working on the first element instead of the last.</p>
+
+        <h2>JavaScript Array shift()</h2>
+        <p>The <span style="color: red;background-color:aliceblue;">shift()</span> method removes the first array element and "shifts" all other elements to a lower index.</p>
+        <p>The shift() method removes the first element of an array (and "shifts" the other elements to the left):</p>
+
+        <p id="demo"></p>
+        <p id="demo1"></p>
+        <script>
+            const flowers = ["Rose", "Lotus", "Mogra", "Diasy"];
+            document.getElementById("demo").innerHTML = flowers;
+            flowers.shift();
+            document.getElementById("demo1").innerHTML = flowers;
+        </script>
+
+        <hr>
+
+        <p>The <span style="color: red;background-color:aliceblue;">shift()</span> method returns the value that was "shifted out":</p>
+        
+        <p id="demo2"></p>
+        <p id="demo3"></p>
+        <script>
+            const flowers1 = ["Rose", "Lotus", "Mogra", "Diasy"];
+            document.getElementById("demo2").innerHTML = flowers1.shift();
+            document.getElementById("demo3").innerHTML = flowers1;
+        </script>
+
+        <hr>
+
+        <p>By Assigning new variable for popping the item.</p>
+
+        <p id="Demo"></p>
+        <p id="Demo1"></p>
+        <script>
+            const Flowers1 = ["Rose", "Lotus", "Mogra", "Diasy"];
+            let shifted = Flowers1.shift();
+            let shiftedAgain = Flowers1.shift();
+            document.getElementById("Demo").innerHTML = shifted + shiftedAgain;
+            document.getElementById("Demo1").innerHTML = Flowers1;
+        </script>
+        <hr>
+   
+        <h2>JavaScript Array unshift()</h2>
+        <p>The <span style="color: red;background-color:aliceblue;">unshift()</span> method adds a new element to an array (at the beginning), and "unshifts" older elements:</p>
+        
+        <p id="demo4"></p>
+        <p id="demo5"></p>
+        <script>
+            const flower2 = ["Rose", "Lotus", "Mogra", "Diasy", "Lavender"];
+            document.getElementById("demo4").innerHTML = flower2;
+            flower2.unshift("Lilly");
+            document.getElementById("demo5").innerHTML = flower2;
+        </script>
+
+        <hr>
+
+        <p>The <span style="color: red;background-color:aliceblue;">unshift()</span> method returns the new array length:</p>
+   
+        <p id="demo6"></p>
+        <p id="demo7"></p>
+        <script>
+            const flowers3 = ["Rose", "Lotus", "Mogra", "Diasy", "Lavender"];
+            document.getElementById("demo6").innerHTML = flowers3.unshift("Marigold","Lilly");
+            document.getElementById("demo7").innerHTML = flowers3;
+        </script>
+
+        <hr>
+
+        <h2>Changing Elements</h2>
+        <p>Array elements are accessed using their <b>index number</b>:</p>
+        <p>Array <b>indexes</b> start with 0:</p>
+        <p>[0] is the first array element  <br>
+            [1] is the second   <br>
+            [2] is the third ...
+        </p>
+    </body>
+</html>

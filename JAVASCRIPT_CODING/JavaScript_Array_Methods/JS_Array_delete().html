@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JavaScript Array Methods</title>
+    </head>
+    <body>
+        <h1>JavaScript Array delete()</h1>
+        <p style="background-color: pink;">Warning !  <br>
+            Array elements can be deleted using the JavaScript operator <span style="color: red;">delete.</span>  <br>
+            Using <b>delete</b> leaves <b>undefined</b> holes in the array.  <br>
+            Use pop() or shift() instead.  
+        </p>
+
+        <p id="demo"></p>
+        <p id="demo1"></p>
+        <script>
+            const flowers = ["Rose", "Lotus", "Mogra", "Diasy"];
+            document.getElementById("demo").innerHTML = "The first flower is:" + flowers[0];
+            delete flowers[0];
+            document.getElementById("demo1").innerHTML = "The first flower is: " + flowers[0];
+        </script>
+
+        <hr>
+
+        <p id="demo2"></p>
+        <p id="demo3"></p>
+        <script>
+            const flowers2 = ["Rose", "Lotus", "Mogra", "Diasy"];
+            document.getElementById("demo2").innerHTML = "The second flower is:" + flowers2[1];
+            delete flowers2[1];
+            document.getElementById("demo3").innerHTML = "The second flower is:" + flowers2[1];
+        </script>
+    </body>
+</html>

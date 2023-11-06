@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JavaScript Array Methods</title>
+    </head>
+    <body>
+        <h1>JavaScript Array toString()</h1>
+        <p>The JavaScript method <span style="color: red;background-color:aliceblue;">toString()</span> converts an array to a string of (comma separated) array values.</p>
+        <p>The toString() method returns an array as a comma separated string:</p>
+
+        <p id="demo"></p>
+        <script>
+            const flowers = ["Rose", "Lotus", "Mogra", "Diasy"];
+            document.getElementById("demo").innerHTML = flowers.toString();
+        </script>
+
+        <hr>
+
+        <p id="demo2"></p>
+        <script>
+            const numbers = [45, 98, 65, 99, 12, 1, 4, 65];
+            document.getElementById("demo2").innerHTML = numbers.toString();
+        </script>
+
+        <hr>
+   
+        <h2>The join() Method</h2>
+        <p>The join() method joins array elements into a string.</p>
+        <p>It this example we have used " * " as a separator between the elements:</p>
+
+        <p>The <span style="color: red;background-color:aliceblue;">join()</span>  method also joins all array elements into a string.</p>
+        <p>It behaves just like <span style="color: red;background-color:aliceblue;">toString()</span>, but in addition you can specify the separator:</p>
+   
+        <p id="demo3"></p>
+        <script>
+            const flowers1 = ["Rose", "Lotus", "Mogra", "Diasy", "Lavender", "Marigold", "Lilly"];
+            document.getElementById("demo3").innerHTML = flowers1.join(" * ");
+        </script>
+
+        <hr>
+
+        <p id="demo4"></p>
+        <script>
+            const number2 = [637, 548, 698, 976, 862, 75, 865, 97, 75, 68, 96, 86];
+            document.getElementById("demo4").innerHTML = number2.join(" * ");
+        </script>
+    </body>
+</html>
