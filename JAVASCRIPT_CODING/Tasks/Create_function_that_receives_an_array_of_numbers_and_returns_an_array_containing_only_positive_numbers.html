@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Create a function that receives an array of numbers and returns an array containing only the positive numbers. ( Take min 10 elements consisting of at least four negative numbers)</title>
+    </head>
+    <body>
+        <h1>Create a function that receives an array of numbers and returns an array containing only the positive numbers. ( Take min 10 elements consisting of at least four negative numbers)</h1>
+        <script>
+            const number = [86, -90, 1, -56, 12, -5, 45, -30, 67, 89];
+            let pos_numb = 0;
+            let neg_numb = 0;
+            for(let i = 0; i < number.length; i++) 
+            {
+                if (number[i]<0)
+                   neg_numb++;
+                else 
+                   pos_numb++;
+            } 
+            console.log("The Positive numbers in an array is ")
+        </script>
+    </body>
+</html>

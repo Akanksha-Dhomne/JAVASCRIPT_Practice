@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Calculate the average of the numbers in an array of numbers. (Take a minimum of 8 numbers in the array)</title>
+    </head>
+    <body>
+        <h1>Calculate the average of the numbers in an array of numbers. (Take a minimum of 8 numbers in the array)</h1>
+        <script>
+            function myFunction(arr) {
+                let sum = 0;
+                for(let i = 0; i < arr.length; i++){
+                    sum += arr[i];
+                }
+                const average = sum / arr.length;
+                return average;
+            }
+            const myArray = [5, 78, 86, 67, 1, 4, 6, 80];
+            const avg = myFunction(myArray);
+                console.log("The average is: " +avg);
+        </script>
+    </body>
+</html>

@@ -6,7 +6,12 @@
     <body>
         <h1>Calculate the sum of numbers in an array of numbers. (Take a minimum of 8 numbers in the array).</h1>
         <script>
-            
+            const myArray = [5, 78, 86, 67, 1, 4, 6, 80];
+            let sum = 0;
+            for(let i = 0; i < myArray.length; i++) {
+                sum += myArray[i];
+                console.log("The sum of numbers in an array: " +sum);
+            }
         </script>
     </body>
 </html>
