@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JavaScript Sorting Arrays</title>
+    </head>
+    <body>
+        <h1>My Min / Max JavaScript Methods</h1>
+        <p>The fastest solution is to use a "home made" method.</p>
+        <p>This function loops through an array comparing each value with the highest value found:</p>
+
+        <h2>Example (Find Max)</h2>
+        <p>The highest number is <span id="demo"></span>.</p>
+
+        <script>
+            const points = [76, 3900, 12, 86, 60, 30, 14, 1 ,10];
+            document.getElementById("demo").innerHTML = myArrayMax(points);
+
+            function myArrayMax(arr){
+                let len = arr.length;
+                console.log("Length: ",len);
+                let max = -Infinity;
+                while(len--){
+                    if (arr[len] > max){
+                        max = arr[len];
+                        console.log("MAX value is : ",max);
+                    }
+                }
+                return max;
+            }
+        </script>
+
+        <hr>
+
+        <h2>Example (Find Min)</h2>
+        <p>This function loops through an array comparing each value with the lowest value found:</p>
+
+        <p>The lowest number is <span id="demo2"></span>.</p>
+
+        <script>
+            const points1 = [76, 87, 12, 86, 3900, 600, 1 ,10];
+            document.getElementById("demo2").innerHTML = myArrayMin(points1);
+
+            function myArrayMin(arr){
+                let len = arr.length;
+                let min = Infinity;
+                while (len--){
+                    if (arr[len] < min) {
+                        min = arr[len];
+                        console.log("MIN value is : ",min);
+                    }
+                }
+                return min;
+            }
+        </script>
+    </body>
+</html>

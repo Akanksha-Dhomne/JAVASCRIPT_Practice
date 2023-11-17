@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JavaScript Sorting Arrays</title>
+    </head>
+    <body>
+        <h1>JavaScript Sorting Arrays</h1>
+        <h2>Reversing an Array</h2>
+        <p>The <span style="color: red;background-color: aliceblue;">reverse() </span>method reverses the elements in an array.</p>
+        <p>You can use it to sort an array in descending order:</p>
+
+        <p id="demo"></p>
+        <p id="demo1"></p>
+        <p id="demo2"></p>
+
+        <script>
+            // Create and display an array:
+            const flowers = ["Jasmine", "Aster", "Blue water lily", "Lavender", "Freesia"];
+            document.getElementById("demo").innerHTML = flowers;
+            
+            // First sort the array
+            flowers.sort();
+            document.getElementById("demo1").innerHTML = flowers;
+            
+            // Then reverse it:
+            flowers.reverse();
+            document.getElementById("demo2").innerHTML = flowers;
+        </script>
+
+        <hr>
+
+        <p id="demo3"></p>
+        <p id="demo4"></p>
+        <p id="demo5"></p>
+
+        <script>
+            const alpha = ["Z","D","U","O","A","B","G","C"];
+            document.getElementById("demo3").innerHTML = alpha;
+
+            alpha.sort();
+            document.getElementById("demo4").innerHTML = alpha;
+
+            alpha.reverse();
+            document.getElementById("demo5").innerHTML = alpha;
+        </script>
+
+    </body>
+</html>

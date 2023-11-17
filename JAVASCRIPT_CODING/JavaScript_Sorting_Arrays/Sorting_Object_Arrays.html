@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JavaScript Sorting Arrays</title>
+    </head>
+    <body>
+        <h1>Sorting Object Arrays</h1>
+        <p>JavaScript arrays often contain objects:</p>
+        <p>const cars = [    <br>
+            {type:"Volvo", year:2016},  <br>
+            {type:"Saab", year:2001},   <br>
+            {type:"BMW", year:2010}    <br>
+          ];
+        </p>
+
+        <p>Even if objects have properties of different data types, the sort() method can be used to sort the array.</p>
+        <p>The solution is to write a compare function to compare the property values:</p>
+
+        <p id="demo"></p>
+
+        <script>
+            const flowers = [
+                {type:"Jasmine", color:"Red"},
+                {type:"Lily", color:"White"},
+                {type:"Rose", color:"Pink"}
+            ];
+
+            displayflowers();
+            flowers.sort(function(a, b){return a.color - b.color});
+            displayflowers();
+
+            function displayflowers(){
+                document.getElementById("demo").innerHTML = flowers[0].type + " " + flowers[0].color + "<br>" +
+                  flowers[1].type + " " + flowers[1].color + "<br>" +
+                  flowers[2].type + " " + flowers[2].color;
+            }
+        </script>
+
+        <hr>
+
+        <p>Comparing string properties is a little more complex:</p>
+
+        <button onclick="myFunction()">Sort</button>
+        <p id="demo2"></p>
+        
+        <script>
+           const flowers2 = [
+                {type:"Jasmine", color:"Red"},
+                {type:"Lily", color:"White"},
+                {type:"Rose", color:"Pink"}
+            ];
+            
+            displayflowers2();
+
+            function displayflowers2() {
+                flowers2.sort(function(a, b){
+                    let x = a.type.toLowerCase();
+                    let y = b.type.toLowerCase();
+                    if(x < y) {return -1;}
+                    if(x > y) {return 1;}
+                    return 0;
+                });
+                displayflowers2();
+            }
+
+            function displayflowers2(){
+                document.getElementById("demo2").innerHTML = flowers2[0].type + " " + flowers2[0].color + "<br>" +
+                  flowers2[1].type + " " + flowers2[1].color + "<br>" +
+                  flowers2[2].type + " " + flowers2[2].color;
+            }
+        </script>
+
+    </body>
+</html>

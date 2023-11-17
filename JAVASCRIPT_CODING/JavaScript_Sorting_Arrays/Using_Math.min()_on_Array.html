@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JavaScript Sorting Arrays</title>
+    </head>
+    <body>
+        <h1>Using Math.min() on an Array</h1>
+        <p>You can use <span style="color: red;background-color: aliceblue;">Math.min.apply </span>to find the lowest number in an array:</p>
+        <p>You can use it to sort an array in descending order:</p>
+
+        <p>The lowest number is <span id="demo"></span>.</p>
+
+        <script>
+           const points = [76, 87, 12, 86, 3900, 600, 1 ,10];
+           document.getElementById("demo").innerHTML = myArrayMin(points);
+
+            function myArrayMin(arr) {
+                return Math.min.apply(null, arr);
+            }
+        </script>
+
+        <p>Math.min.apply(null, [1, 2, 3]) is equivalent to Math.min(1, 2, 3).</p>
+
+        <hr>
+
+        <p>The lowest number is <span id="demo1"></span>.</p>
+        <script>
+            const points1 = [169, 7898, 78, 86, 10, 90, 56];
+            document.getElementById("demo1").innerHTML = myArrayMin2(points1);
+
+            function myArrayMin2(arr) {
+                return Math.min.apply(null, arr);
+            }
+        </script>
+
+    </body>
+</html>
