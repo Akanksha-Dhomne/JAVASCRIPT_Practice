@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JavaScript Date Formats</title>
+    </head>
+    <body>
+        <h1>The getTimezoneOffset() Method</h1>
+        <p>The getTimezoneOffset() method returns the difference (in minutes) between local time an UTC time:</p>
+        
+        <p id="demo"></p>
+        <script>
+            let D = new Date("2019-01-20");
+            document.getElementById("demo").innerHTML = D.getTimezoneOffset();
+        </script>
+
+        <hr>
+
+        <p id="demo2"></p>
+        <script>
+            const d = new Date();
+            document.getElementById("demo2").innerHTML = d.getTimezoneOffset();
+        </script>
+        
+    </body>
+</html>
