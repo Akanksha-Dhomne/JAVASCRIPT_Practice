@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JavaScript Date Formats</title>
+    </head>
+    <body>
+        <h1>The getDay() Method</h1>
+        <p>The getDay() method returns the weekday of a date as a number (0-6).</p>
+
+        <h3>Note : <br>
+            In JavaScript, the first day of the week (day 0) is Sunday.   <br>
+            Some countries in the world consider the first day of the week to be Monday.
+        </h3>
+        
+        <p id="demo"></p>
+        <script>
+            let D = new Date("2019-01-23");
+            document.getElementById("demo").innerHTML = D.getDay();
+        </script>
+
+        <hr>
+
+        <p id="demo2"></p>
+        <script>
+            const d = new Date();
+            document.getElementById("demo2").innerHTML = d.getDay();
+        </script>
+        
+        <h3>Note : <br>
+            You can use an array of names, and getDay() to return weekday as a name:   <br>
+        </h3>
+
+        <hr>
+ 
+        <p id="demo3"></p>
+        <script>
+            const days = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+
+            const da = new Date("2019-01-20");
+            let day = days[da.getDay()];
+            document.getElementById("demo3").innerHTML = day;
+        </script>
+
+        <hr>
+
+        <p id="demo4"></p>
+        <script>
+            const Days = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+
+            const Da = new Date();
+            let Day = Days[Da.getDay()];
+            document.getElementById("demo4").innerHTML = Day;
+        </script>
+        
+
+    </body>
+</html>

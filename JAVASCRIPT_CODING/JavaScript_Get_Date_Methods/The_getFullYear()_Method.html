@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JavaScript Date Formats</title>
+    </head>
+    <body>
+        <h1>The getFullYear() Method</h1>
+        <p>The getFullYear() method returns the year of a date as a four digit number:</p>
+        
+        <p id="demo"></p>
+        <script>
+            let D = new Date("2019-01-20");
+            document.getElementById("demo").innerHTML = D.getFullYear();
+        </script>
+
+        <hr>
+
+        <p id="demo2"></p>
+        <script>
+            const d = new Date();
+            document.getElementById("demo2").innerHTML = d.getFullYear();
+        </script>
+        
+        <p style="background-color: pink;">WARNING! <br>
+            Old JavaScript code might use the non-standard method getYear().  <br>
+            getYear() is supposed to return a 2-digit year.  <br>
+            getYear() is deprecated. Do not use it!
+        </p>
+    </body>
+</html>

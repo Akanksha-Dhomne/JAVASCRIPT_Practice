@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JavaScript Date Formats</title>
+    </head>
+    <body>
+        <h1>The Date.now() Method</h1>
+        <p>Date.now() returns the number of milliseconds since January 1, 1970.</p>
+        
+        <p id="demo"></p>
+        <script>
+            let D = Date.now();
+            document.getElementById("demo").innerHTML = D;
+        </script>
+
+        <hr>
+
+        <p>Calculate the number of years since 1970/01/01:</p>
+
+        <p id="demo2"></p>
+        <script>
+            // Calculate milliseconds in a year
+            const minute = 1000 * 60;
+            const hour = minute * 60;
+            const day = hour * 24;
+            const year = day * 365; 
+
+            // Divide Date.now() with a year
+            let years = Math.round(Date.now() / year);
+            document.getElementById("demo").innerHTML = years;
+        </script>
+        
+        <p>Date.now() is a static method of the Date object.</p>
+        <p>You cannot use it on a date object like myDate.now().</p>
+        <p>The syntax is always Date.now().</p>
+        
+    </body>
+</html>

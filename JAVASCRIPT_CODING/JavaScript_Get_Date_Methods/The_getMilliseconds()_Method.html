@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JavaScript Date Formats</title>
+    </head>
+    <body>
+        <h1>The getMilliseconds() Method</h1>
+        <p>The getMilliseconds() method returns the milliseconds of a date as a number (0-999):</p>
+        
+        <p id="demo"></p>
+        <script>
+            let D = new Date("2019-01-20");
+            document.getElementById("demo").innerHTML = D.getMilliseconds();
+        </script>
+
+        <hr>
+
+        <p id="demo2"></p>
+        <script>
+            const d = new Date();
+            document.getElementById("demo2").innerHTML = d.getMilliseconds();
+        </script>
+        
+    </body>
+</html>

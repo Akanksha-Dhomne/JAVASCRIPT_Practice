@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JavaScript Date Formats</title>
+    </head>
+    <body>
+        <h1>The getMonth() Method</h1>
+        <p>The getMonth() method returns the month of a date as a number (0-11).</p>
+        
+        <p style="background-color: rgb(215, 215, 145);">NOTE : <br>
+            In JavaScript, January is month number 0, February is number 1, ...  <br>
+            Finally, December is month number 11.  
+        </p>
+        <p>To get the correct month number, you must add 1:</p>
+
+        <p id="demo"></p>
+        <script>
+            let D = new Date("2019-09-20");
+            document.getElementById("demo").innerHTML = D.getMonth() + 1;
+        </script>
+
+        <hr>
+
+        <p id="demo2"></p>
+        <script>
+            const d = new Date();
+            document.getElementById("demo2").innerHTML = d.getMonth() + 1;
+        </script>
+        
+        <p style="background-color: rgb(215, 215, 145);">NOTE : <br>
+            You can use an array of names to return the month as a name: 
+        </p>
+
+        <hr>
+
+        <p id="demo3"></p>
+        <script>
+            const months = ["January","February","March","April","May","June","July","August","September","October","November","December"];
+            
+            const da = new Date("2002-06-08");
+            let month = months[da.getMonth()];
+            document.getElementById("demo3").innerHTML = month;
+        </script>
+       
+       <hr>
+
+       <p id="demo4"></p>
+       <script>
+           const Months = ["January","February","March","April","May","June","July","August","September","October","November","December"];
+           
+           const Da = new Date();
+           let Month = months[Da.getMonth()];
+           document.getElementById("demo4").innerHTML = Month;
+       </script>
+    </body>
+</html>

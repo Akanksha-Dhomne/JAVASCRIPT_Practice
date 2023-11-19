@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JavaScript Date Formats</title>
+    </head>
+    <body>
+        <h1>The getHours() Method</h1>
+        <p>The getHours() method returns the hours of a date as a number (0-23):</p>
+        
+        <p id="demo"></p>
+        <script>
+            let D = new Date("2019-01-20");
+            document.getElementById("demo").innerHTML = D.getHours();
+        </script>
+
+        <hr>
+
+        <p id="demo2"></p>
+        <script>
+            const d = new Date();
+            document.getElementById("demo2").innerHTML = d.getHours();
+        </script>
+        
+    </body>
+</html>

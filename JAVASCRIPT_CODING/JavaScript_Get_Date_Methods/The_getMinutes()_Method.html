@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JavaScript Date Formats</title>
+    </head>
+    <body>
+        <h1>The getMinutes() Method</h1>
+        <p>The getMinutes() method returns the minutes of a date as a number (0-59):</p>
+        
+        <p id="demo"></p>
+        <script>
+            let D = new Date("2019-01-20");
+            document.getElementById("demo").innerHTML = D.getMinutes();
+        </script>
+
+        <hr>
+
+        <p id="demo2"></p>
+        <script>
+            const d = new Date();
+            document.getElementById("demo2").innerHTML = d.getMinutes();
+        </script>
+        
+    </body>
+</html>

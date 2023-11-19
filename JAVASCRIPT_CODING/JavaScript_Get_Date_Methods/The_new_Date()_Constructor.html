@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JavaScript Get Date Methods</title>
+        <style>
+            table{
+                border: 2px solid black;
+                width: 50%;
+                border-collapse: collapse;
+            }
+            th,td{
+                border: 2px solid black;
+                padding: 8px;
+            }
+            tr:nth-child(even){
+                background-color: #dddddd;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>JavaScript Get Date Methods</h1>
+        <h2>The new Date() Constructor</h2>
+        <p>In JavaScript, date objects are created with new Date().</p>
+        <p>new Date() returns a date object with the current date and time.</p>
+    
+        <p id="demo"></p>
+        <script>
+            let d = new Date();
+            document.getElementById("demo").innerHTML = d;
+        </script>
+
+        <hr>
+
+        <h2>Date Get Methods</h2>
+        <table>
+            <tr>
+                <th>Method</th>
+                <th>Description</th>
+            </tr>
+            <tr>
+                <td>getFullYear()</td>
+                <td>Get year as a four digit number (yyyy)</td>
+            </tr>
+            <tr>
+                <td>getMonth()</td>
+                <td>Get month as a number (0-11)</td>
+            </tr>
+            <tr>
+                <td>getDate()</td>
+                <td>Get day as a number (1-31)</td>
+            </tr>
+            <tr>
+                <td>getDay()</td>
+                <td>Get weekday as a number (0-6)</td>
+            </tr>
+            <tr>
+                <td>getHours()</td>
+                <td>Get hour (0-23)</td>
+            </tr>
+            <tr>
+                <td>getMinutes()</td>
+                <td>Get minute (0-59)</td>
+            </tr>
+            <tr>
+                <td>getSeconds()</td>
+                <td>Get second (0-59)</td>
+            </tr>
+            <tr>
+                <td>Get millisecond (0-999)</td>
+                <td>Get millisecond (0-999)</td>
+            </tr>
+            <tr>
+                <td>getTime()</td>
+                <td>Get time (milliseconds since January 1, 1970)</td>
+            </tr>
+        </table>
+        <p>You can then use the number of milliseconds to convert it to a date object:</p>
+    
+        <h3>NOTE1 :   <br>
+            The get methods above return Local time.  <br>
+            Universal time (UTC) is documented at the bottom of this page.
+        </h3>
+
+        <h3>NOTE2 :   <br>
+            The get methods return information from existing date objects.  <br>
+            In a date object, the time is static. The "clock" is not "running".   <br>
+            The time in a date object is NOT the same as current time.
+        </h3>
+        
+    </body>
+</html>
