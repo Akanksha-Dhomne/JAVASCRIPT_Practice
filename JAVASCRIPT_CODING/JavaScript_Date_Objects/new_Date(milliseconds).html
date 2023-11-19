@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JavaScript Date Objects</title> 
+    </head>
+    <body>
+        <h1>JavaScript Stores Dates as Milliseconds</h1>
+        <p>JavaScript stores dates as number of milliseconds since January 01, 1970.</p>
+        <p><b>Zero time is January 01, 1970 00:00:00 UTC.</b></p>
+        <p>One day (24 hours) is 86 400 000 milliseconds.</p>
+        <p>Now the time is: 1700220214064 milliseconds past January 01, 1970</p>
+
+        <h2>new Date(milliseconds)</h2>
+        <p><span style="color: red;background-color: aliceblue;">new Date(milliseconds) </span>creates a new date object as <b>milliseconds </b>plus zero time:</p>
+        <p>01 January 1970 plus 100 000 000 000 milliseconds is:</p>
+        <p>100000000000 milliseconds from January 01 1970 UTC is:</p>
+
+        <p id="demo"></p>
+        <script>
+            const time = new Date(100000000000);
+            document.getElementById("demo").innerHTML = time;
+        </script>
+
+        <hr>
+
+        <p>January 01 1970 minus 100 000 000 000 milliseconds is:</p>
+        <p>-100000000000 milliseconds from January 01 1970 UTC is:</p>
+
+        <p id="demo2"></p>
+        <script>
+            const time2 = new Date(-100000000000);
+            document.getElementById("demo2").innerHTML = time2;
+        </script>
+
+        <hr>
+
+        <p>January 01 1970 plus 24 hours is:</p>
+        <p>86400000 milliseconds from January 01 1970 UTC is:</p>
+
+        <p id="demo3"></p>
+        <script>
+            const d = new Date(86200000);
+            document.getElementById("demo3").innerHTML = d;
+        </script>
+
+        <p>One day (24 hours) is 86,200,000 milliseconds.</p>
+
+        <hr>
+
+        <p>01 January 1970 plus 0 milliseconds is:</p>
+        <p>0 milliseconds from January 01 1970 UTC is:</p>
+
+        <p id="demo4"></p>
+        <script>
+            const D = new Date(0);
+            document.getElementById("demo4").innerHTML = D;
+        </script>
+
+    </body>
+</html>

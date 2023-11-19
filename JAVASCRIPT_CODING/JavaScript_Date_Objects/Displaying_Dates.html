@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JavaScript Date Objects</title> 
+    </head>
+    <body>
+        <h1>Date Methods</h1>
+        <p>When a date object is created, a number of methods allow you to operate on it.</p>
+        <p>Date methods allow you to get and set the year, month, day, hour, minute, second, and millisecond of date objects, using either local time or UTC (universal, or GMT) time.</p>
+        
+        <h2>Displaying Dates</h2>
+        <p>JavaScript will (by default) output dates using the toString() method. This is a string representation of the date, including the time zone. The format is specified in the ECMAScript specification:</p>
+        <h2>The toString() Method</h2>
+        <p>new Date() without arguments, creates a date object with the current date and time:</p>
+
+        <p id="demo"></p>
+        <script>
+            const time = new Date();
+            document.getElementById("demo").innerHTML = time;
+        </script>
+
+        <hr>
+
+        <p>When you display a date object in HTML, it is automatically converted to a string, with the toString() method.</p>
+        <p>Convert a date to a string:</p>
+
+        <p id="demo2"></p>
+        <script>
+            const time2 = new Date();
+            document.getElementById("demo2").innerHTML = time2.toString();
+            console.log(typeof(time2));
+        </script>
+
+        <hr>
+
+        <h2>The toDateString() Method</h2>
+        <p>The toDateString() method converts a date to a more readable format:</p>
+        <p>Convert a date to a date string:</p>
+
+        <p id="demo3"></p>
+        <script>
+            const d = new Date();
+            document.getElementById("demo3").innerHTML = d.toDateString();
+        </script>
+
+        <hr>
+
+        <h2>The toUTCString() Method</h2>
+        <p>The toUTCString() method converts a date to a string using the UTC standard:</p>
+        <p>Convert a date to a string using the UTC standard:</p>
+
+        <p id="demo4"></p>
+        <script>
+            const D = new Date();
+            document.getElementById("demo4").innerHTML = D.toUTCString();
+        </script>
+
+        <hr>
+
+        <h2>The toISOString() Method</h2>
+        <p>The toISOString() method converts a date to a string using the ISO standard:</p>
+        <p>Convert a date to a string using the ISO standard:</p>
+
+        <p id="demo5"></p>
+        <script>
+            const Da = new Date();
+            document.getElementById("demo5").innerHTML = Da.toISOString();
+        </script>
+
+    </body>
+</html>

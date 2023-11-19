@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JavaScript Date Objects</title>
+    </head>
+    <body>
+        <h1>JavaScript Date Objects</h1>
+        <p>JavaScript Date Objects let us work with dates:</p>
+        <p>Fri Nov 17 2023 16:53:34 GMT+0530 (India Standard Time)</p>
+
+        <h2>Using new Date()</h2>
+        <p>new Date() without arguments, creates a date object with the current date and time:</p>
+
+        <p id="demo"></p>
+        <script>
+            const time = new Date();
+            document.getElementById("demo").innerHTML = time;
+        </script>
+
+        <hr>
+
+        <p id="demo2"></p>
+        <script>
+            const time2 = new Date("2022-03-26");
+            document.getElementById("demo2").innerHTML = time2;
+        </script>
+
+        <h3>Note</h3>
+        <p>Date objects are static. The "clock" is not "running".</p>
+        <p>The computer clock is ticking, date objects are not.</p>
+
+        <h2>JavaScript Date Output</h2>
+        <p>By default, JavaScript will use the browser's time zone and display a date as a full text string</p>
+        <p>Fri Nov 17 2023 16:53:34 GMT+0530 (India Standard Time)</p>
+    </body>
+</html>

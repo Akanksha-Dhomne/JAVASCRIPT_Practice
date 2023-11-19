@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JavaScript Date Objects</title>
+    </head>
+    <body>
+        <h1>Previous Century</h1>
+        <p>One and two digit years will be interpreted as 19xx:</p>
+
+        <h2>Using new Date()</h2>
+        <p>Using new Date(7 numbers), creates a new date object with the specified date and time:</p>
+
+        <p id="demo"></p>
+        <script>
+            const time = new Date(99, 11, 24);
+            document.getElementById("demo").innerHTML = time;
+        </script>
+
+        <hr>
+
+        <p>One digit years will be interpreted as 19xx:</p>
+
+        <p id="demo2"></p>
+        <script>
+            const time2 = new Date(8, 15, 24);
+            document.getElementById("demo2").innerHTML = time2;
+        </script>
+
+    </body>
+</html>
