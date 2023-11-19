@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JavaScript Date Formats</title>
+    </head>
+    <body>
+        <h1>ISO Dates (Date-Time)</h1>
+        <p>ISO dates can be written with added hours, minutes, and seconds (YYYY-MM-DDTHH:MM:SSZ):</p>
+        <p>Separate date and time with a capital T.</p>
+        <p>Indicate UTC time with a capital Z.</p>
+
+        <p id="demo"></p>
+        <script>
+            const D = new Date("2023-11-19T13:00:00Z");
+            document.getElementById("demo").innerHTML = D;
+        </script>
+
+        <p>Date and time is separated with a capital T.</p>
+        <p>UTC time is defined with a capital letter Z.</p>
+        <p>If you want to modify the time relative to UTC, remove the Z and add +HH:MM or -HH:MM instead:</p>
+
+        <hr>
+
+        <p id="demo2"></p>
+        <script>
+            document.getElementById("demo2").innerHTML = new Date("2023-11-19T13:00:00-06:00");;
+        </script>
+
+        <p>UTC (Universal Time Coordinated) is the same as GMT (Greenwich Mean Time).</p>
+        
+    </body>
+</html>

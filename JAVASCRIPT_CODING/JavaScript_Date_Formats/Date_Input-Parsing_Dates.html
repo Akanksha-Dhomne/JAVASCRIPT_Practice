@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JavaScript Date Formats</title>
+    </head>
+    <body>
+        <h1>Date Input - Parsing Dates</h1>
+        <p>If you have a valid date string, you can use the Date.parse() method to convert it to milliseconds.</p>
+        <p>Date.parse() returns the number of milliseconds between the date and January 1, 1970:</p>
+    
+        <p id="demo"></p>
+        <script>
+            let msec = Date.parse("November 19, 2023");
+            document.getElementById("demo").innerHTML = msec;
+        </script>
+
+        <hr>
+
+        <p>You can then use the number of milliseconds to convert it to a date object:</p>
+    
+        <p id="demo2"></p>
+        <script>
+            let mseco = Date.parse("November 19, 2023");
+            const d = new Date(mseco);
+            document.getElementById("demo2").innerHTML = d;
+        </script>
+        
+    </body>
+</html>

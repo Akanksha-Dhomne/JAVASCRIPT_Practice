@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JavaScript Date Formats</title>
+    </head>
+    <body>
+        <h1>JavaScript Long Dates.</h1>
+        <p>Long dates are most often written with a "MMM DD YYYY" syntax like this:</p>
+    
+        <p id="demo"></p>
+        <script>
+            const D = new Date("Nov 19 2023");
+            document.getElementById("demo").innerHTML = D;
+        </script>
+
+        <hr>
+
+        <p>Month and day can be in any order:</p>
+    
+        <p id="demo2"></p>
+        <script>
+            const Da = new Date("19 Nov 2023");
+            document.getElementById("demo2").innerHTML = Da;
+        </script>
+
+        <hr>
+
+        <p>And, month can be written in full (January), or abbreviated (Jan):</p>
+        <p>const d = new Date("January 25 2015");</p>
+        <p>OR</p>
+        <p>const d = new Date("Jan 25 2015");</p>
+
+        <p id="demo3"></p>
+        <script>
+            const Dat = new Date("January 25 2015");
+            document.getElementById("demo3").innerHTML = Dat;
+        </script>
+
+        <p id="demo4"></p>
+        <script>
+            const d = new Date("Jan 25 2015");
+            document.getElementById("demo4").innerHTML = d;
+        </script>
+
+        <hr>
+
+        <p>Commas are ignored. Names are case insensitive:</p>
+
+        <p id="demo5"></p>
+        <script>
+            const da = new Date("JANUARY, 25, 2015");
+            document.getElementById("demo5").innerHTML = da;
+        </script>
+        
+    </body>
+</html>
