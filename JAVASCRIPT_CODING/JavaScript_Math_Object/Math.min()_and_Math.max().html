@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Math Methods</title>
+    </head>
+    <body>
+        <h1>Math Methods</h1>
+        <h2>Math.min() and Math.max()</h2>
+        <p><span style="color: red;background-color: aliceblue;">Math.min() and Math.max()</span> can be used to find the lowest or highest value in a list of arguments:</p>
+        <p>Math.min() returns the lowest value in a list of arguments:</p>
+
+        <p id="demo35"></p>
+        <p id="demo36"></p>
+        <script>
+            document.getElementById("demo35").innerHTML = Math.min(0, 45, 678, 90, -3, -300);
+            document.getElementById("demo36").innerHTML = Math.min(0, 45, 678, 90, 3, 300);
+        </script>
+
+        <hr>
+
+        <p>Math.max() returns the highest value in a list of arguments.</p>
+        <p id="demo37"></p>
+        <p id="demo38"></p>
+        <script>
+            document.getElementById("demo37").innerHTML = Math.max(0, 45, 900, 90, -3, -300);
+            document.getElementById("demo38").innerHTML = Math.max(0, 45, 678, 90, 3, 300);
+        </script>
+    </body>
+</html>

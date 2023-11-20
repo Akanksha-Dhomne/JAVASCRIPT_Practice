@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Math Methods</title>
+    </head>
+    <body>
+        <h1>Math Methods</h1>
+        <h2>Math.sin()</h2>
+        <p><span style="color: red;background-color: aliceblue;">Math.sin(x) </span>returns the sine (a value between -1 and 1) of the angle x (given in radians).</p>
+        <p>If you want to use degrees instead of radians, you have to convert degrees to radians:</p>
+        <p>Angle in radians = Angle in degrees x PI / 180.</p>
+
+        <p id="demo33"></p>
+        <script>
+            document.getElementById("demo33").innerHTML = "The sine value of 90 degrees is " + Math.sin(90 * Math.PI / 180);
+        </script>
+    </body>
+</html>
