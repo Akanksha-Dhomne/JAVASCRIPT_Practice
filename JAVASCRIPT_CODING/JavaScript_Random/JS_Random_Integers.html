@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JavaScript Random</title>
+    </head>
+    <body>
+        <h1>JavaScript Random Integers</h1>
+        <p>Math.random() used with Math.floor() can be used to return random integers.</p>
+        <p>There is no such thing as JavaScript integers.</p>
+        <p>We are talking about numbers with no decimals here.</p>
+        <p>Math.floor(Math.random() * 10) returns a random integer between 0 and 9 (both included):</p>
+
+        <p id="demo"></p>
+        <script>
+            document.getElementById("demo").innerHTML = Math.floor(Math.random() * 10);
+        </script>
+
+        <hr>
+
+        <p>Math.floor(Math.random() * 13) returns a random integer between 0 and 12 (both included):</p>
+
+        <p id="demo2"></p>
+        <script>
+            document.getElementById("demo2").innerHTML = Math.floor(Math.random() * 13);
+        </script>
+
+        <hr>
+
+        <p>Math.floor(Math.random() * 100) returns a random integer between 0 and 99 (both included):</p>
+            
+        <p id="demo3"></p>
+        <script>
+            document.getElementById("demo3").innerHTML = Math.floor(Math.random() * 100);
+        </script>
+
+        <hr>
+        
+        <p>Math.floor() used with Math.random() * 101 returns a random integer between 0 and 100 (both included):</p>
+            
+        <p id="demo4"></p>
+        <script>
+            document.getElementById("demo4").innerHTML = Math.floor(Math.random() * 101);
+        </script>
+
+        <hr>
+
+        <p>Math.floor(Math.random() * 10) + 1) returns a random integer between 1 and 10 (both included):</p>
+ 
+        <p id="demo5"></p>
+        <script>
+            document.getElementById("demo5").innerHTML = Math.floor(Math.random() * 10) + 1;
+        </script>
+
+        <hr>
+
+        <p>Math.floor(Math.random() * 100) + 1) returns a random integer between 1 and 100 (both included):</p>
+    
+        <p id="demo6"></p>
+        <script>
+            document.getElementById("demo6").innerHTML = Math.floor(Math.random() * 100) + 1;
+        </script>
+    </body>
+</html>
