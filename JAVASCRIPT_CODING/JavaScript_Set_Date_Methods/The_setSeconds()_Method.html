@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>The setFullYear() Method</title>
+    </head>
+    <body>
+        <h1>The setSeconds() Method</h1>
+        <p>The setSeconds() method sets the seconds of a date object (0-59):</p>
+
+        <p id="demo"></p>
+        <script>
+            const d = new Date();
+            d.setSeconds(23);
+            document.getElementById("demo").innerHTML = d; 
+        </script>
+
+        <hr>
+
+        <p id="demo2"></p>
+        <script>
+            const D = new Date();
+            D.setSeconds(10);
+            document.getElementById("demo2").innerHTML = D; 
+        </script>
+
+        <hr>
+
+        <p id="demo3"></p>
+        <script>
+            const Da = new Date();
+            Da.setSeconds(30);
+            document.getElementById("demo3").innerHTML = Da; 
+        </script>
+    </body>
+</html>

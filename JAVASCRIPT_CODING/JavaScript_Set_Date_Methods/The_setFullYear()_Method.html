@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>The setFullYear() Method</title>
+    </head>
+    <body>
+        <h1>The setFullYear() Method</h1>
+        <p>The setFullYear() method sets the year of a date object. In this example to 2020:</p>
+        
+        <p id="demo"></p>
+        <script>
+            const d = new Date();
+            d.setFullYear(2020);
+            document.getElementById("demo").innerHTML = d; 
+        </script>
+
+        <hr>
+
+        <p>The setFullYear() method can optionally set month and day:</p>
+
+        <p id="demo2"></p>
+        <script>
+            const D = new Date();
+            D.setFullYear(2019, 0, 20);
+            document.getElementById("demo2").innerHTML = D; 
+        </script>
+    </body>
+</html>

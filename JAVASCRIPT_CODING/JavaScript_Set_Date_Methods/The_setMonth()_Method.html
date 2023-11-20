@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>The setFullYear() Method</title>
+    </head>
+    <body>
+        <h1>The setMonth() Method</h1>
+        <p>The setMonth() method sets the month of a date object (0-11):</p>
+        <p>Note that months count from 0. December is month 11:</p>
+
+        <p id="demo"></p>
+        <script>
+            const d = new Date();
+            d.setMonth(11);
+            document.getElementById("demo").innerHTML = d; 
+        </script>
+
+        <hr>
+
+        <p>The setFullYear() method can optionally set month and day:</p>
+
+        <p id="demo2"></p>
+        <script>
+            const D = new Date();
+            D.setMonth(0);
+            document.getElementById("demo2").innerHTML = D; 
+        </script>
+
+        <hr>
+
+        <p id="demo3"></p>
+        <script>
+            const Da = new Date();
+            Da.setMonth(5);
+            document.getElementById("demo3").innerHTML = Da; 
+        </script>
+    </body>
+</html>

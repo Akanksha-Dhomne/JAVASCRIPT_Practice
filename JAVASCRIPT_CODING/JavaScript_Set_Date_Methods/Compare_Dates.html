@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>The setFullYear() Method</title>
+    </head>
+    <body>
+        <h1>Compare Dates</h1>
+        <p>Dates can easily be compared.</p>
+        <p>The following example compares today's date with January 14, 2100:</p>
+
+        <p id="demo"></p>
+        <script>
+            let text;
+            const today = new Date();
+            const someday = new Date();
+            someday.setFullYear(2100, 0, 14);
+
+            if(someday > today) {
+                text = "Today is before January 14, 2100.";
+            }
+            else{
+                text = "Today is after January 14, 2100.";
+            }
+            document.getElementById("demo").innerHTML = text; 
+        </script>
+
+        <p>JavaScript counts months from 0 to 11. January is 0. December is 11.</p>
+    
+    </body>
+</html>
