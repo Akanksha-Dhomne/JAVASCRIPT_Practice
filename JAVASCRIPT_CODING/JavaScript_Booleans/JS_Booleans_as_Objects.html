@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JavaScript Booleans</title>
+    </head>
+    <body>
+        <h1>JavaScript Booleans as Objects</h1>
+        
+        <p>Normally JavaScript booleans are primitive values created from literals:</p>
+        <p>let x = false;</p>
+        <p>But booleans can also be defined as objects with the keyword new:</p>
+        <p>let y = new Boolean(false);</p>
+        <p>Booleans and Boolean objects cannot be safely compared:</p>
+
+        <p id="demo"></p>
+        <script>
+            // x is a boolean
+            let x = false;
+
+            // y is an object
+            let y = new Boolean(false);
+            document.getElementById("demo").innerHTML = typeof x + "<br>" + typeof y;
+        </script>
+
+        <p>Do not create Boolean objects.</p>
+        <p>The new keyword complicates the code and slows down execution speed.</p>
+        <p>Boolean objects can produce unexpected results:</p>
+        
+        <hr>
+
+        <p>When using the == operator, x and y are equal:</p>
+        <p id="demo1"></p>
+        <script>
+            let d = false;    // d is a boolean 
+            let f = new Boolean(false);  // y is an object
+            document.getElementById("demo1").innerHTML = (d==f);
+            </script>
+
+        <hr>
+
+        <p>When using the === operator, x and y are not equal:</p>
+        <p id="demo2"></p>
+        <script>
+            let j = false;    // j is a boolean 
+            let k = new Boolean(false);  // k is an object
+            document.getElementById("demo2").innerHTML = (j===k);
+        </script>
+
+        <hr>
+
+        <p>Note the difference between (x==y) and (x===y).</p>
+
+        <p>(x == y) true or false?</p>
+        <p id="demo3"></p>
+        <script>
+            let c = new Boolean(false);    
+            let b = new Boolean(false);  
+            document.getElementById("demo3").innerHTML = (c==b);
+        </script>
+
+        <hr>
+
+        <p>(x === y) true or false?</p>
+
+        <p id="demo4"></p>
+        <script>
+            let h = new Boolean(false);    
+            let v = new Boolean(false);  
+            document.getElementById("demo4").innerHTML = (h===v);
+        </script>
+
+        <p>Comparing two JavaScript objects always return false.</p>
+    </body>
+</html>

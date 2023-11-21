@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JavaScript Booleans</title>
+    </head>
+    <body>
+        <h1>Everything Without a "Value" is False</h1>
+        
+        <p>The Boolean value of 0 (zero) is false:</p>
+        <p id="demo"></p>
+        <script>
+            let x = 0;
+            document.getElementById("demo").innerHTML = Boolean(x);
+        </script>
+
+        <hr>
+
+        <p>The Boolean value of -0 (minus zero) is false:</p>
+        <p id="demo1"></p>
+        <script>
+            let y = -0;
+            document.getElementById("demo1").innerHTML = Boolean(y);
+            </script>
+
+        <hr>
+
+        <p>The Boolean value of "" (empty string) is false:</p>
+        <p id="demo2"></p>
+        <script>
+            let z = "";
+            document.getElementById("demo2").innerHTML = Boolean(z);
+        </script>
+
+        <hr>
+
+        <p>The Boolean value of undefined is false:</p>
+        <p id="demo3"></p>
+        <script>
+            let a;
+            document.getElementById("demo3").innerHTML = Boolean(a);
+        </script>
+
+        <hr>
+
+        <p>The Boolean value of null is false:</p>
+        <p id="demo4"></p>
+        <script>
+            let s = null;
+            document.getElementById("demo4").innerHTML = Boolean(s);
+        </script>
+
+        <hr>
+
+        <p>The Boolean value of false is (you guessed it) false:</p>
+        <p id="demo5"></p>
+        <script>
+            let D = false;
+            document.getElementById("demo5").innerHTML = Boolean(D);
+        </script>
+
+        <hr>
+
+        <p>The Boolean value of NaN is false:</p>
+        <p id="demo6"></p>
+        <script>
+            let g = 10 / "Hello";
+            document.getElementById("demo6").innerHTML = Boolean(g);
+        </script>
+    </body>
+</html>
