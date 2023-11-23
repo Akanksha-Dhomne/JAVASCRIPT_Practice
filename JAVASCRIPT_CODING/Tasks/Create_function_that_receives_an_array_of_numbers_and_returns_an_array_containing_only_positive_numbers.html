@@ -6,17 +6,20 @@
     <body>
         <h1>Create a function that receives an array of numbers and returns an array containing only the positive numbers. ( Take min 10 elements consisting of at least four negative numbers)</h1>
         <script>
-            const number = [86, -90, 1, -56, 12, -5, 45, -30, 67, 89];
-            let pos_numb = 0;
-            let neg_numb = 0;
-            for(let i = 0; i < number.length; i++) 
-            {
-                if (number[i]<0)
-                   neg_numb++;
-                else 
-                   pos_numb++;
-            } 
-            console.log("The Positive numbers in an array is ")
+            function getPositiveNumbers(numbers){
+                let positiveNumb = [];
+
+                for(let i = 0; i < numbers.length; i++){
+                    if(numbers[i] > 0) {
+                        positiveNumb.push(numbers[i]);
+                    }
+                }
+
+                return positiveNumb;
+            }
+            const myArray = [86, -90, 1, -56, 12, -5, 45, -30, 67, 89];
+            let resultArray = getPositiveNumbers(myArray);
+            console.log("The Positive numbers in an array are ",resultArray);
         </script>
     </body>
 </html>

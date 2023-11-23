@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Find the maximum number in an array of numbers (Take a minimum of 8 numbers in the array).</title>
+    </head>
+    <body>
+        <h1>Find the maximum number in an array of numbers (Take a minimum of 8 numbers in the array).</h1>
+    
+        <script>
+            const myArray = [100, 86, 200, 50, 1, 68, 90, -4, 45, 909];
+            let max = 0;
+
+            for(let i = 0; i < myArray.length; i++) {
+                if(myArray[i] > max){
+                    max = myArray[i];
+                }
+            }
+            console.log(max); 
+        </script>
+
+        <h2>OR</h2>
+
+        <p id="demo"></p>
+        <script>
+            const myArr = [100, 86, 200, 50, 1, 68, 90, -4, 45, 909];
+            
+            // Sorting Ascendingly
+            myArr.sort(function(a, b){return a-b});
+            console.log(myArr); 
+
+            // Sorting Descendingly
+            myArr.sort(function(a, b){return b-a});
+            console.log(myArr); 
+ 
+            document.getElementById("demo").innerHTML = myArr[0];
+            console.log(myArr[0]);
+        </script>
+
+    </body>
+</html>
