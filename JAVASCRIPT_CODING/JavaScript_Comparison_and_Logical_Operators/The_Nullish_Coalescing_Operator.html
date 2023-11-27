@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JavaScript Comparison and Logical Operators</title>
+    </head>
+    <body>
+        <h1>The Nullish Coalescing Operator (??)</h1>
+        <p>The ?? operator returns the first argument if it is not nullish (null or undefined).</p>
+        <p>Otherwise it returns the second argument.</p>
+
+        <p id="demo"></p> 
+        <script>
+            let name = null;
+            let text = "missing";
+            let result = name ?? text;
+            document.getElementById("demo").innerHTML ="The name is " + result;
+        </script>
+    </body>
+</html>

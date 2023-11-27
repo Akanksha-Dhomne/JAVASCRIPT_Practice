@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JavaScript Comparison and Logical Operators</title>
+    </head>
+    <body>
+        <h1>Conditional (Ternary) Operator</h1>
+        <p>JavaScript also contains a conditional operator that assigns a value to a variable based on some condition.</p>
+        <p>variablename = (condition) ? value1:value2 </p>
+        
+        <h2>The () ? : Ternary Operator</h2>
+        <p>Input your age and click the button:</p>
+
+        <input id="age" value="20" />
+        <button onclick="myFunction()">Try it</button>
+        <p id="demo"></p>
+        <script>
+            function myFunction() {
+                let age = document.getElementById("age").value;
+                let voteable = (age < 20) ? "Too young":"Old Enough";
+                document.getElementById("demo").innerHTML = voteable + " to vote.";
+            }
+        </script>
+    </body>
+</html>

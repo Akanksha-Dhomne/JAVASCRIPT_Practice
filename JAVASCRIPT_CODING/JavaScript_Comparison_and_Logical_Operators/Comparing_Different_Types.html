@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JavaScript Comparison and Logical Operators</title>
+    </head>
+    <body>
+        <h1>Comparing Different Types</h1>
+        <p>Comparing data of different types may give unexpected results.</p>
+        <p>When comparing a string with a number, JavaScript will convert the string to a number when doing the comparison. An empty string converts to 0. A non-numeric string converts to NaN which is always false.</p>
+
+        <p id="demo"></p>
+        <script>
+            document.getElementById("demo").innerHTML = 2 < 20;
+        </script>
+
+        <hr>
+
+        <p id="demo1"></p>
+        <script>
+            document.getElementById("demo1").innerHTML = 2 < "20";
+        </script>
+
+        <hr>
+
+        <p id="demo2"></p>
+        <script>
+            document.getElementById("demo2").innerHTML = 2 < "John";
+        </script>
+
+        <hr>
+
+        <p id="demo3"></p>
+        <script>
+            document.getElementById("demo3").innerHTML = 2 > "John";
+        </script> 
+        
+        <hr>
+
+        <p id="demo4"></p>
+        <script>
+            document.getElementById("demo4").innerHTML = 2 == "John";
+        </script> 
+
+        <hr>
+
+        <p id="demo5"></p>
+        <script>
+            document.getElementById("demo5").innerHTML = "2" < "12";  // here 12 is small bcoz this numbers are in the string form so 2 is bigger than 12 as it always compare sting from first position so 2 is bigger than 1
+        </script>
+
+        <hr>
+
+        <p id="demo6"></p>
+        <script>
+            document.getElementById("demo6").innerHTML = "2" > "12";
+        </script>
+
+        <hr>
+
+        <p id="demo7"></p>
+        <script>
+            document.getElementById("demo7").innerHTML = "2" == "12";
+        </script>
+
+        <p>When comparing two strings, "2" will be greater than "12", because (alphabetically) 1 is less than 2.</p>
+        <p>To secure a proper result, variables should be converted to the proper type before comparison:</p>
+        
+        <hr>
+
+        <p>Input your age and click the button:</p>
+
+        <input id="age" value="20"/>
+        <button onclick="myFunction()">Try it</button>
+        <p id="demo8"></p>
+
+        <script>
+            function myFunction(){
+                let voteable;
+                let age = Number (document.getElementById("age").value);
+                        if(isNaN(age)) {
+                            voteable = "Input is not a number";
+                        }
+                        else{
+                            voteable = (age < 20) ? "Too Young":"Old Enough";
+                        }
+                        document.getElementById("demo8").innerHTML = voteable + " to vote";
+                    }
+        </script>
+    </body>
+</html>
