@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JavaScript if, else, and else if</title>
+    </head>
+    <body>
+        <h1>JavaScript if, else, and else if</h1>
+        <p>Conditional statements are used to perform different actions based on different conditions.</p>
+
+        <h2>The else Statement</h2>
+        <p>else specifies a block of code to be excuted, if the condition is false</p>
+
+        <h3>if (condition) {      <br>
+            //  block of code to be executed if the condition is true    <br>
+        }  <br>
+          else {      <br>
+            //  block of code to be executed if the condition is false  <br>
+          }
+        </h3>
+
+        <h2>JavaScript if .. else</h2>
+        <p>If the hour is less than 18, create a "Good day" greeting, otherwise "Good evening":</p>
+        <p>A time-based greeting:</p>
+
+        <p id="demo"></p>
+        <script>
+            const hour = new Date().getHours();
+            let greeting;
+            
+            if (hour < 18) {
+                greeting = "Good day!";
+            }
+            else{
+                greeting = "Good Evening!";
+            }
+                
+            document.getElementById("demo").innerHTML = greeting;
+        </script>
+
+        <hr>
+
+        <p id="demo2"></p>
+        <script>
+            const hours = new Date().getHours();
+            let greeting2;
+
+            if (hours < 12){
+                greeting2 = "Good day!";
+            }
+            else{
+                greeting2 = "Good Evening!";
+            }
+                
+            document.getElementById("demo2").innerHTML = greeting2;
+        </script>
+    </body>
+</html>
